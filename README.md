@@ -13,7 +13,7 @@
 
 ### Contenidos
 - **Algoritmo:** Definimos un algoritmo como una serie de instrucciones lógicas, ordenadas y finitas entre sí, mediante las cuales se soluciona un problema o existe una forma de procesar los datos. Se produce así una ejecución mediante un tipo de entrada (input), que se enfrenta a un conjunto de pasos concretos y que desemboca en una salida (output) del resultado esperado. Se puede entender como la base de todo lo que hace la programación, en el sentido de que se traduce la lógica humana a procesos que puede ejecutar la computadora de forma precisa.
-- <img width="1122" height="1402" alt="image" src="https://github.com/user-attachments/assets/14047ee5-629d-4464-a0f3-bba3057ef63d" />
+<img width="1122" height="1402" alt="image" src="https://github.com/user-attachments/assets/d591e4a8-1b02-4694-85aa-369c04dbf933" />
 
 - **Pseudocódigo:** El pseudocódigo es el recurso para describir un algoritmo a través de un lenguaje congenial que está justo entre el lenguaje humano y el lenguaje de programación. No se trata de la ejecución de un código, sino de una herramienta de diseño lógico que ayuda a estructurar un proceso que no tiene que estar sujeto a normas técnicas..
 - **Diagrama de flujo:** Un diagrama de flujo es la representación gráfica de un algoritmo o proceso, donde se emplean figuras geométricas para especificar y detallar cada uno de los pasos a realizar y flechas para explicar ordenar los pasos de forma lógica. Cada símbolo tiene un significado propio (los óvalos para el inicio/fin y los rombos para las decisiones, etc.) de forma que permite visualizar el camino de la información.
