@@ -113,6 +113,8 @@ int main() {
 
 **Prueva de escritorio :**
 <img width="1100" height="500" alt="prueba_escritorio_tabla" src="https://github.com/user-attachments/assets/7e226209-e40d-49a2-91ef-8b4d936ef74a" />
+<img width="743" height="236" alt="image" src="https://github.com/user-attachments/assets/d22015e1-353b-4514-8dcc-093dcfc7e921" />
+
 
 **Principales dificultades :**
 Punteros y direcciones de memoria: Es lo que más marea. Tienes que aprender a usar el * y el & para decirle a la compu exactamente dónde guardar los datos, y si te equivocas, el programa explota (el famoso Segmentation Fault).
