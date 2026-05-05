@@ -75,7 +75,7 @@ FinAlgoritmo
 #include <stdio.h>
 
 int main() {
-    // Definición de variables sencillas
+    
     float largo, alto, area, costo, total;
     char nombre[50];
 
