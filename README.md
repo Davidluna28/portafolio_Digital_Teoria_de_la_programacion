@@ -22,7 +22,8 @@
 - **Prueba de escritorio:** La prueba de escritorio es una forma de verificar la lógica mediante un proceso manual del algoritmo o del pseudocódigo que se quiere ejecutar, justo antes hacerlo en la computadora. Constituye la forma mediante la cual se elaboran las tablas en las que van figurando las variables y se van ejecutandolas instrucciones del pseudocódigo paso a paso asignando valores reales para ver cómo se producen los cambios. Este método permite detectar fallos de lógica, bucles infinitos, fallos en las condiciones, etc., de forma anticipada, a la vez que rápida y sencilla.
 - **Lenguajes de programación:** Un lenguaje de programación es el conjunto de reglas sintácticas y semánticas que permiten a una persona escribir indicaciones precisas que serán ejecutadas por una computadora. Es un traductor que va de la lógica con la que se resuelven problemas a un código que genera una máquina en lenguaje binario, lo que el hardware del sistema entiende.
 - **Programación por bloques:** Se trata de un recurso visual que facilita la creación de programas al conectar constituyentes gráficos que denotan instrucciones lógicas, eliminando la necesidad de codificar en un lenguaje de programación textual. En efecto, al conectar unos bloques con otros, como si de un rompecabezas se tratara, se asegura que la sintaxis que se aplica es la correcta y que el flujo es coherente.
-- <img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/8311b442-f458-4cfb-abee-0b5c4d53b62b" />
+  <img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/e21c0c5b-402c-40c9-bdcf-c602b064f3b4" />
+
 ### Ejercicio: Estructura Secuencial (presupuesto de pintura)
 
 #### 1. Planteamiento del problema
