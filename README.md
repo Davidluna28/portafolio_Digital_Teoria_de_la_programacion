@@ -129,5 +129,41 @@ Lo más trascendente que aprendí es que programar no se puede reducir simplemen
 
 
 ## unidad 2
+###Estructuras Condicionales.
+- **Condicional Simple (if):**
+graph TD
+    A([Inicio]) --> B{¿La condición<br>es Verdadera?}
+    B -- Sí --> C[Ejecutar bloque de código]
+    B -- No --> D([Fin de la condición / Continuar programa])
+    C --> D
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ## unidad 3
