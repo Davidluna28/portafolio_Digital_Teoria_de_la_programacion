@@ -76,6 +76,7 @@ FinAlgoritmo
 **Diagrama de flujo:**
 <img width="492" height="930" alt="image" src="https://github.com/user-attachments/assets/67d841f5-8e95-4ac8-96fb-9f94df9c3aa4" />
 
+
 **Codigo fuente  :**
 #include <stdio.h>
 
@@ -128,8 +129,9 @@ Lo más trascendente que aprendí es que programar no se puede reducir simplemen
 
 
 
-## unidad 2
-###Estructuras Condicionales.
+## 📘 unidad 2
+
+##Estructuras Condicionales.
 
 - **Condicional Simple (if):**El condicional simple if (al que en idioma español le daríamos una traducción muy literal como "si..." de condición) es la estructura de control más básica de la programación. Se utiliza para que el programa tome una decisión en función de una única condición.
 Básicamente le dice al programa: "evalúa esto. Si me devuelves 'verdadero' ejecuta esto. Si me devuelves 'falso' simplemente lo omites y continúas con lo tuyo".
@@ -142,7 +144,9 @@ En español se puede traducir como: "Si se da la condición, haz la Acción A; S
 - **Condicional Múltiple (switch):**El Condicional Múltiple (switch) es el tipo de control que empleamos cuando una única variable puede ser evaluada para distintos valores y hacer un camino alternativo en cada caso.Lejos de encadenar diez bloques de if- else if lo que haría que el código fuese larguísimo y superdificil de leer , el switch evalúa la variable en una sola ocasión saltando directamente al "case" que coincida con el valor dado.
  <img width="1024" height="614" alt="image" src="https://github.com/user-attachments/assets/1065a472-5468-426a-977a-6a8ac53d0c5d" />
 
- ###Estructuras Repetitivas
+
+
+ ##Estructuras Repetitivas
 
  - **Ciclo Mientras (While):**El Ciclo Mientras (While) se presenta como una estructura de control repetitiva (o también denominada bucle) que permite la ejecución de un segmento de código repetidamente siempre que una condición dada mantenga su valor verdadero.
 Dicho ciclo se denomina también como una estructura de "pre-condición" pues el programa es un poco "desconfiado", pues lo primero que debe hacer antes de cada vuelta es comprobar si la condición de para de bucle se cumple. Si desde el inicio mismo la condición resulta falsa, el programa no desarrollará el ciclo ni tan siquiera una vez, sino que lo eludirá.
@@ -158,6 +162,29 @@ La inicialización: Crea una variable "contador" (comúnmente nombrada como i) y
 La condición: El límite que le dice al ciclo cuando detenerse (ej. mientras i < 10).
 El incremento/decremento: El incremento o decremento que le hacemos al contador en cada vuelta (ej. sumarle 1 a i: i++).
 <img width="1024" height="1024" alt="image" src="https://github.com/user-attachments/assets/fca5e59d-8631-496d-a29b-6f0ae637846e" />
+
+##Ejercicio Practico:structura condicional y repetitiva.
+
+#### 1. Planteamiento del problema
+Escribe un programa en C que solicite al usuario ingresar un número que esté obligatoriamente en el rango de 10 a 20 (inclusive). Si el usuario ingresa un número fuera de este rango, el programa debe mostrar un error y volver a pedir el número hasta que sea válido. Una vez ingresado un número correcto, el programa debe mostrar una cuenta regresiva desde ese número hasta el 0. Finalmente, debe calcular y mostrar en pantalla la suma de todos los números que formaron parte de esa cuenta regresiva.
+
+#### 2. Análisis del problema
+| **Etapa**              | **Actividad**           | **Detalle**                                                                                                  |
+| ---------------------- | ----------------------- | ------------------------------------------------------------------------------------------------------------ |
+| **Entrada**            | Ingreso de dato         | El usuario introduce un número entero.                                                                       |
+| **Validación**         | Verificación del rango  | Se comprueba que el número esté entre 10 y 20, inclusive.                                                    |
+| **Control de errores** | Solicitud de nuevo dato | Si el número está fuera del rango permitido, se muestra un mensaje de error y se vuelve a pedir otro número. |
+| **Procesamiento**      | Cuenta regresiva        | Se realiza una cuenta regresiva desde el número válido hasta 0, disminuyendo de uno en uno.                  |
+| **Procesamiento**      | Acumulación de suma     | Cada número de la cuenta regresiva se agrega a una variable acumuladora para obtener la suma total.          |
+| **Salida**             | Mensaje de error        | Se muestra únicamente cuando el usuario ingresa un número fuera del rango permitido.                         |
+| **Salida**             | Secuencia de números    | Se imprimen todos los valores de la cuenta regresiva.                                                        |
+| **Salida**             | Resultado final         | Se muestra la suma total de los números incluidos en la cuenta regresiva.                                    |
+
+
+
+
+
+
 
 
 
