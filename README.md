@@ -130,12 +130,16 @@ Lo más trascendente que aprendí es que programar no se puede reducir simplemen
 
 ## unidad 2
 ###Estructuras Condicionales.
-- **Condicional Simple (if):**
-graph TD
-    A([Inicio]) --> B{¿La condición<br>es Verdadera?}
-    B -- Sí --> C[Ejecutar bloque de código]
-    B -- No --> D([Fin de la condición / Continuar programa])
-    C --> D
+- **Condicional Simple (if):**El condicional simple if (al que en idioma español le daríamos una traducción muy literal como "si..." de condición) es la estructura de control más básica de la programación. Se utiliza para que el programa tome una decisión en función de una única condición.
+Básicamente le dice al programa: "evalúa esto. Si me devuelves 'verdadero' ejecuta esto. Si me devuelves 'falso' simplemente lo omites y continúas con lo tuyo".
+<img width="402" height="241" alt="image" src="https://github.com/user-attachments/assets/880695bc-0316-46b0-b845-dc59cff4c84a" />
+- **Condicional Doble (if else):**El condicional doble (if - else) es la estructura de control que nos da la opción de tomar una decisión entre un par de caminos posibles. A diferencia del if simple (donde solo hacíamos algo si se llegaba a dar la condición), aquí le obligamos al programa a hacer algo si la respuesta es verdadera y hacer otra cosa si es falsa.
+En español se puede traducir como: "Si se da la condición, haz la Acción A; SI NO (else), haz la Acción B".
+<img width="1024" height="614" alt="image" src="https://github.com/user-attachments/assets/e24b0c96-93ae-4ddc-a8ae-8e2a26649e3f" />
+- **Condicional Múltiple (switch):**El Condicional Múltiple (switch) es el tipo de control que empleamos cuando una única variable puede ser evaluada para distintos valores y hacer un camino alternativo en cada caso.Lejos de encadenar diez bloques de if- else if lo que haría que el código fuese larguísimo y superdificil de leer , el switch evalúa la variable en una sola ocasión saltando directamente al "case" que coincida con el valor dado.
+ <img width="1024" height="614" alt="image" src="https://github.com/user-attachments/assets/1065a472-5468-426a-977a-6a8ac53d0c5d" />
+ 
+
 
 
 
