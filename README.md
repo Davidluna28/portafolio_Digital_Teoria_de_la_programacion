@@ -120,6 +120,8 @@ int main() {
 
 
 **Principales dificultades :**
+
+
 Punteros y direcciones de memoria: Es lo que más marea. Tienes que aprender a usar el * y el & para decirle a la compu exactamente dónde guardar los datos, y si te equivocas, el programa explota (el famoso Segmentation Fault).
 
 Sintaxis que no perdona: C es súper especial. Si te falta un punto y coma ; o si pones = en lugar de == en un if, el compilador te lanza mil errores que a veces no se entienden nada y te vuelven loco buscando el fallo.
@@ -127,6 +129,9 @@ Sintaxis que no perdona: C es súper especial. Si te falta un punto y coma ; o s
 El lío de los "Strings": En C no puedes simplemente crear un texto; tienes que manejar arreglos de caracteres a mano. Concatenar o comparar palabras es un dolor de cabeza porque tienes que cuidar los índices y el carácter de cierre \0
 
 **Reflexcion Critica  :**
+
+
+
 Lo más trascendente que aprendí es que programar no se puede reducir simplemente a tirar código por doquier, sino que hay que saber armar la lógica antes de tratar de tocar el teclado. "Llevar un diagrama o un pseudocódigo a un lenguaje como el C es un salto fuertísimo, sobre todo cuando entran en juego los punteros y la memoria". En cambio, "si haces tus pruebas de escritorio bien, te evitas mil enojos en el compilador". Al fin de cuentas, "se trata de ser ordenados, y sobre todo entender que cada paso cuenta para que el programa no truene".
 
 
