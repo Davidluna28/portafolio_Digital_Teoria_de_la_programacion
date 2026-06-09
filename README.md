@@ -131,7 +131,7 @@ Lo más trascendente que aprendí es que programar no se puede reducir simplemen
 
 ## 📘 unidad 2
 
-##Estructuras Condicionales.
+### Estructuras Condicionales.
 
 - **Condicional Simple (if):**El condicional simple if (al que en idioma español le daríamos una traducción muy literal como "si..." de condición) es la estructura de control más básica de la programación. Se utiliza para que el programa tome una decisión en función de una única condición.
 Básicamente le dice al programa: "evalúa esto. Si me devuelves 'verdadero' ejecuta esto. Si me devuelves 'falso' simplemente lo omites y continúas con lo tuyo".
@@ -141,29 +141,29 @@ Básicamente le dice al programa: "evalúa esto. Si me devuelves 'verdadero' eje
 En español se puede traducir como: "Si se da la condición, haz la Acción A; SI NO (else), haz la Acción B".
 <img width="1024" height="614" alt="image" src="https://github.com/user-attachments/assets/e24b0c96-93ae-4ddc-a8ae-8e2a26649e3f" />
 
-- **Condicional Múltiple (switch):**El Condicional Múltiple (switch) es el tipo de control que empleamos cuando una única variable puede ser evaluada para distintos valores y hacer un camino alternativo en cada caso.Lejos de encadenar diez bloques de if- else if lo que haría que el código fuese larguísimo y superdificil de leer , el switch evalúa la variable en una sola ocasión saltando directamente al "case" que coincida con el valor dado.
+- ** Condicional Múltiple (switch):**El Condicional Múltiple (switch) es el tipo de control que empleamos cuando una única variable puede ser evaluada para distintos valores y hacer un camino alternativo en cada caso.Lejos de encadenar diez bloques de if- else if lo que haría que el código fuese larguísimo y superdificil de leer , el switch evalúa la variable en una sola ocasión saltando directamente al "case" que coincida con el valor dado.
  <img width="1024" height="614" alt="image" src="https://github.com/user-attachments/assets/1065a472-5468-426a-977a-6a8ac53d0c5d" />
 
 
 
- ##Estructuras Repetitivas
+ ### Estructuras Repetitivas
 
- - **Ciclo Mientras (While):**El Ciclo Mientras (While) se presenta como una estructura de control repetitiva (o también denominada bucle) que permite la ejecución de un segmento de código repetidamente siempre que una condición dada mantenga su valor verdadero.
+ - ** Ciclo Mientras (While):**El Ciclo Mientras (While) se presenta como una estructura de control repetitiva (o también denominada bucle) que permite la ejecución de un segmento de código repetidamente siempre que una condición dada mantenga su valor verdadero.
 Dicho ciclo se denomina también como una estructura de "pre-condición" pues el programa es un poco "desconfiado", pues lo primero que debe hacer antes de cada vuelta es comprobar si la condición de para de bucle se cumple. Si desde el inicio mismo la condición resulta falsa, el programa no desarrollará el ciclo ni tan siquiera una vez, sino que lo eludirá.
 <img width="1024" height="1024" alt="image" src="https://github.com/user-attachments/assets/9b49a951-8174-400f-b8b4-ebbe9768e31a" />
 
-- **Ciclo Hacer - Mientras (Do - While):**El proceso Hacer - Mientras (Do - While) es un tipo de control repetido que provoca la obligación en el programa de ejecutar el bloque de código en cuestión al menos una vez, y tras ello proceder a la evaluación de si ha de seguir ejecutándose o no.
+- ** Ciclo Hacer - Mientras (Do - While):**El proceso Hacer - Mientras (Do - While) es un tipo de control repetido que provoca la obligación en el programa de ejecutar el bloque de código en cuestión al menos una vez, y tras ello proceder a la evaluación de si ha de seguir ejecutándose o no.
 A la inversa del ciclo While (que comprueba la condición antes de entrar), el Do - While es una estructura de post-condición. En este caso, el programa es "atrevido": primero realiza la acción y a continuación pregunta.Se traduce, literalmente, por "Hacer estas operaciones y en el siguiente instante evaluar si mientras la condición sea verdadera se vuelve a ejecutar".
 <img width="1024" height="1024" alt="image" src="https://github.com/user-attachments/assets/f27770c6-34cb-4d84-8343-60e22f66a405" />
 
-- **Ciclo Para (For):**El ciclo Para (For) es aquella estructura de control repetitiva que empleamos cuando sabemos de antemano cuántas veces queremos que se ejecute un bloque de código, es decir, exactamente el número de veces.
+- ** Ciclo Para (For):**El ciclo Para (For) es aquella estructura de control repetitiva que empleamos cuando sabemos de antemano cuántas veces queremos que se ejecute un bloque de código, es decir, exactamente el número de veces.
 Por otro lado, a diferencia de, el While o el Do-While que se ven sometidos a una condición que podría cambiar en el transcurrir del tiempo, el ciclo For está hecho para llevar una cuenta matemática correcta. Para ello, en su estructura agrupa tres elementos importantes en una sola línea:
 La inicialización: Crea una variable "contador" (comúnmente nombrada como i) y le asigna un valor inicial (ej. i = 0).
 La condición: El límite que le dice al ciclo cuando detenerse (ej. mientras i < 10).
 El incremento/decremento: El incremento o decremento que le hacemos al contador en cada vuelta (ej. sumarle 1 a i: i++).
 <img width="1024" height="1024" alt="image" src="https://github.com/user-attachments/assets/fca5e59d-8631-496d-a29b-6f0ae637846e" />
 
-##Ejercicio Practico:structura condicional y repetitiva.
+## Ejercicio Practico:structura condicional y repetitiva.
 
 #### 1. Planteamiento del problema
 Escribe un programa en C que solicite al usuario ingresar un número que esté obligatoriamente en el rango de 10 a 20 (inclusive). Si el usuario ingresa un número fuera de este rango, el programa debe mostrar un error y volver a pedir el número hasta que sea válido. Una vez ingresado un número correcto, el programa debe mostrar una cuenta regresiva desde ese número hasta el 0. Finalmente, debe calcular y mostrar en pantalla la suma de todos los números que formaron parte de esa cuenta regresiva.
@@ -183,7 +183,57 @@ Escribe un programa en C que solicite al usuario ingresar un número que esté o
 #### 3. Diagrama de flujo
 <img width="1271" height="936" alt="image" src="https://github.com/user-attachments/assets/7ae4cfa4-ae1b-4f1b-8e42-dd2497881a18" />
 
+### 4. Codigo fuente
 
+#include <stdio.h>
+int main() {
+     int numero ,s=0;
+
+     do{
+        printf ("ingtrese un numero de 10 a 20\n");
+        scanf("%i",&numero);
+
+        if (numero<10 || numero>20){
+            printf("numero fuera del rango permitido");
+        } 
+     } while (numero<10 || numero>20);
+     printf("el numero sera decrecido:%i\n",numero);
+     for (int a=numero;a>=0;a--){
+        printf("%i\n",a);
+        s=s+a;  
+        
+     }
+     printf("la suma es %i\n",s);
+     
+    return 0;
+}
+
+
+### 5. Prueva de escritorio 
+
+| Iteración | Línea de código                          | **a (Contador)** | **Condición: ¿a ≥ 0?**            | **s (Suma acumulada)** | **Pantalla **                |
+| --------- | ---------------------------------------- | ---------------- | --------------------------------- | ---------------------- | ---------------------------- |
+| —         | `printf("el numero sera decrecido:12");` | —                | —                                 | 0                      | el numero sera decrecido: 12 |
+| 1         | `int a = numero;`                        | 12               | Verdadero (12 ≥ 0)                | 0 + 12 = **12**        | 12                           |
+| 2         | `a--`                                    | 11               | Verdadero (11 ≥ 0)                | 12 + 11 = **23**       | 11                           |
+| 3         | `a--`                                    | 10               | Verdadero (10 ≥ 0)                | 23 + 10 = **33**       | 10                           |
+| 4         | `a--`                                    | 9                | Verdadero (9 ≥ 0)                 | 33 + 9 = **42**        | 9                            |
+| 5         | `a--`                                    | 8                | Verdadero (8 ≥ 0)                 | 42 + 8 = **50**        | 8                            |
+| 6         | `a--`                                    | 7                | Verdadero (7 ≥ 0)                 | 50 + 7 = **57**        | 7                            |
+| 7         | `a--`                                    | 6                | Verdadero (6 ≥ 0)                 | 57 + 6 = **63**        | 6                            |
+| 8         | `a--`                                    | 5                | Verdadero (5 ≥ 0)                 | 63 + 5 = **68**        | 5                            |
+| 9         | `a--`                                    | 4                | Verdadero (4 ≥ 0)                 | 68 + 4 = **72**        | 4                            |
+| 10        | `a--`                                    | 3                | Verdadero (3 ≥ 0)                 | 72 + 3 = **75**        | 3                            |
+| 11        | `a--`                                    | 2                | Verdadero (2 ≥ 0)                 | 75 + 2 = **77**        | 2                            |
+| 12        | `a--`                                    | 1                | Verdadero (1 ≥ 0)                 | 77 + 1 = **78**        | 1                            |
+| 13        | `a--`                                    | 0                | Verdadero (0 ≥ 0)                 | 78 + 0 = **78**        | 0                            |
+| Final     | `a--`                                    | -1               | Falso (-1 ≥ 0) → termina el `for` | **78**                 | —                            |
+| —         | `printf("la suma es %i\n", s);`          | -1               | —                                 | **78**                 | **la suma es 78**            |
+
+
+
+
+<img width="695" height="435" alt="image" src="https://github.com/user-attachments/assets/d079fc1b-5966-4694-b9c7-258aad6ca015" />
 
 
 
