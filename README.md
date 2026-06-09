@@ -240,6 +240,20 @@ int main() {
 
 #### Principales dificultades
 
+El bucle infinito y la computadora congelada: Es lo que más marea en las estructuras repetitivas. En el while y el do-while tienes que acordarte sí o sí de modificar la variable de control adentro del ciclo (el famoso contador o acumulador). Si te descuidas y lo olvidas, la condición nunca se vuelve falsa y el programa se queda corriendo para siempre hasta que te explota la memoria o se te tilda la computadora.
+
+El "caída libre" del switch por culpa del break: El switch se ve súper limpio, pero es traicionero. Si te olvidas de poner la palabra break al final de un caso, el compilador no te avisa nada; simplemente se pasa de largo y te ejecuta las instrucciones de los casos de abajo como si fueran parte del mismo. Te vuelves loco buscando por qué te salen tres respuestas al mismo tiempo.
+
+Elegir el ciclo equivocado (while vs do-while): Confundir cuándo usar cuál es un dolor de cabeza. Si pones un while en una validación de menú, a veces el programa ni entra porque la condición falló desde el inicio. Y si pones un do-while donde no debías, te ejecuta un código intruso al menos una vez antes de darse cuenta de que la condición era falsa, rompiendo toda la lógica.
+
+El desfase por uno (Off-by-one error) en el for: En el ciclo for manejas tres cosas en una sola línea (inicio, límite y paso). Es facilísimo equivocarse en el límite y poner un <= en lugar de <. Al final, el ciclo te da una vuelta de más o una de menos, y cuando trabajas con posiciones exactas, el programa truena.
+
+#### Reflexion critica 
+
+Lo más trascendente de aprender estas estructuras es entender que programar no se puede reducir simplemente a tirar código por doquier, sino que hay que saber armar la lógica antes de tratar de tocar el teclado. Llevar un diagrama de flujo o un pseudocódigo a las condicionales y ciclos es un salto fuertísimo, sobre todo cuando empiezas a anidar un if dentro de un for y todo se empieza a enredar como un espagueti.
+
+En cambio, si haces tus diagramas de flujo bien y tiras tus pruebas de escritorio a mano (evaluando qué pasa si la condición da verdadero o falso), te evitas mil enojos con el programa corriendo mal. Al fin de cuentas, se trata de ser ordenados, entender que no hay que usar la estructura que mejor te caiga sino la que el problema necesita, y saber que cada decisión o cada vuelta cuenta para que el programa no se rompa.
+
 
 
 
