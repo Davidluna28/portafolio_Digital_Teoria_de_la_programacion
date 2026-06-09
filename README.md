@@ -180,6 +180,9 @@ Escribe un programa en C que solicite al usuario ingresar un número que esté o
 | **Salida**             | Secuencia de números    | Se imprimen todos los valores de la cuenta regresiva.                                                        |
 | **Salida**             | Resultado final         | Se muestra la suma total de los números incluidos en la cuenta regresiva.                                    |
 
+#### 3. Diagrama de flujo
+<img width="1271" height="936" alt="image" src="https://github.com/user-attachments/assets/7ae4cfa4-ae1b-4f1b-8e42-dd2497881a18" />
+
 
 
 
