@@ -278,33 +278,16 @@ En cambio, si haces tus diagramas de flujo bien y tiras tus pruebas de escritori
  
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<details>
+  <summary>📂 <b>Unidad 3:</b></summary>
+  <br>
+  <blockquote>
 
 
 ## unidad 3
+
+
+
+
+
+</details>
