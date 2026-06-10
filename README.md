@@ -10,7 +10,9 @@
 
 ### Indice 
 [📘 Unidad 1: Fundamentos de Programación]
+
 [📘 Unidad 2: Estructuras Condicionales y Repetitivas]
+
 [📘 Unidad 3:]
 
 ---
