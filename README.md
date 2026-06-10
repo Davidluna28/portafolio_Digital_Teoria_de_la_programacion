@@ -146,7 +146,7 @@ Lo más trascendente que aprendí es que programar no se puede reducir simplemen
   <summary>📂 <b>Unidad 2: Estructuras Condicionales y Repetitivas</b></summary>
   <br>
   <blockquote>
-## 📘 unidad 2
+## 📘 Unidad 2:
 
 ### Estructuras Condicionales.
 
