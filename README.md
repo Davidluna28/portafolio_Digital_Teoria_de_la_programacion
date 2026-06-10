@@ -7,6 +7,9 @@
 ## 📋 Carátula
 <img width="1241" height="1755" alt="UNIVERSIDAD NACIONAL DE LOJA CARATULA_page-0001" src="https://github.com/user-attachments/assets/808f15e2-1b91-4113-9a5f-9090963e5584" />
 
+
+### Indice 
+[📘 Unidad 1: Fundamentos de Programación]
 ---
 
 ## 📘 Unidad 1: Fundamentos de Programación
