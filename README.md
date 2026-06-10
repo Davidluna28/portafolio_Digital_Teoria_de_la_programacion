@@ -140,6 +140,12 @@ Lo más trascendente que aprendí es que programar no se puede reducir simplemen
 
 </details>
 
+
+
+<details>
+  <summary>📂 <b>Unidad 2: Estructuras Condicionales y Repetitivas</b></summary>
+  <br>
+  <blockquote>
 ## 📘 unidad 2
 
 ### Estructuras Condicionales.
@@ -265,7 +271,7 @@ En cambio, si haces tus diagramas de flujo bien y tiras tus pruebas de escritori
 
 
 
-
+</details>
 
  
 
