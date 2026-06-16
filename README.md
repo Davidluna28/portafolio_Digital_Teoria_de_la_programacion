@@ -389,6 +389,8 @@ McConnell, S. (2004). Code Complete: A Practical Handbook of Software Constructi
   <blockquote>
 
 
+Declaro que para la elaboración de este portafolio digital se utilizaron herramientas de inteligencia artificial como ChatGPT, Gemini y NotebookLM como apoyo en la redacción, corrección de estilo y organización del contenido. El análisis, resolución de ejercicios, elaboración de diagramas de flujo y desarrollo de código fueron realizados por mi persona.
+
 
 
 
