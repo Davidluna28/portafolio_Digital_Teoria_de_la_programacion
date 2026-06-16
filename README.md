@@ -176,12 +176,60 @@ Lo más trascendente que aprendí es que programar no se puede reducir simplemen
 Básicamente le dice al programa: "evalúa esto. Si me devuelves 'verdadero' ejecuta esto. Si me devuelves 'falso' simplemente lo omites y continúas con lo tuyo".
 <img width="402" height="241" alt="image" src="https://github.com/user-attachments/assets/880695bc-0316-46b0-b845-dc59cff4c84a" />
 
+### Psudonimo
+
+if(Condición_booleana)
+{
+    Instrucción_1;
+    Instrucción_2;
+    Instrucción_3;
+}
+
+
+
 - **Condicional Doble (if else):** El condicional doble (if - else) es la estructura de control que nos da la opción de tomar una decisión entre un par de caminos posibles. A diferencia del if simple (donde solo hacíamos algo si se llegaba a dar la condición), aquí le obligamos al programa a hacer algo si la respuesta es verdadera y hacer otra cosa si es falsa.
 En español se puede traducir como: "Si se da la condición, haz la Acción A; SI NO (else), haz la Acción B".
 <img width="1024" height="614" alt="image" src="https://github.com/user-attachments/assets/e24b0c96-93ae-4ddc-a8ae-8e2a26649e3f" />
 
+### Psudonimo
+
+
+
+if(Condición_booleana)
+{
+    Instrucción_si_es_Verdadero_1;
+    Instrucción_si_es_Verdadero_2;
+}
+else
+{
+    Instrucción_si_es_Falso_1;
+    Instrucción_si_es_Falso_2;
+}
+
 - **Condicional Múltiple (switch):** El Condicional Múltiple (switch) es el tipo de control que empleamos cuando una única variable puede ser evaluada para distintos valores y hacer un camino alternativo en cada caso.Lejos de encadenar diez bloques de if- else if lo que haría que el código fuese larguísimo y superdificil de leer , el switch evalúa la variable en una sola ocasión saltando directamente al "case" que coincida con el valor dado.
  <img width="1024" height="614" alt="image" src="https://github.com/user-attachments/assets/1065a472-5468-426a-977a-6a8ac53d0c5d" />
+
+
+ ### Psudonimo
+
+
+ switch(Variable_o_Expresión)
+{
+    case Valor_1:
+        Instrucción_Caso_1;
+        break;
+        
+    case Valor_2:
+        Instrucción_Caso_2;
+        break;
+        
+    default:
+        Instrucción_si_ninguno_coincide;
+        break;
+}
+
+
+ 
 
 
 
@@ -191,9 +239,40 @@ En español se puede traducir como: "Si se da la condición, haz la Acción A; S
 Dicho ciclo se denomina también como una estructura de "pre-condición" pues el programa es un poco "desconfiado", pues lo primero que debe hacer antes de cada vuelta es comprobar si la condición de para de bucle se cumple. Si desde el inicio mismo la condición resulta falsa, el programa no desarrollará el ciclo ni tan siquiera una vez, sino que lo eludirá.
 <img width="1024" height="1024" alt="image" src="https://github.com/user-attachments/assets/9b49a951-8174-400f-b8b4-ebbe9768e31a" />
 
+### Psudonimo
+
+
+while(Condición_booleana)
+{
+    Instrucción_1;
+    Instrucción_2;
+    Modificación_de_Variable_de_Control; 
+}
+
+
+
+
+
+
 - **Ciclo Hacer - Mientras (Do - While):** El proceso Hacer - Mientras (Do - While) es un tipo de control repetido que provoca la obligación en el programa de ejecutar el bloque de código en cuestión al menos una vez, y tras ello proceder a la evaluación de si ha de seguir ejecutándose o no.
 A la inversa del ciclo While (que comprueba la condición antes de entrar), el Do - While es una estructura de post-condición. En este caso, el programa es "atrevido": primero realiza la acción y a continuación pregunta.Se traduce, literalmente, por "Hacer estas operaciones y en el siguiente instante evaluar si mientras la condición sea verdadera se vuelve a ejecutar".
 <img width="1024" height="1024" alt="image" src="https://github.com/user-attachments/assets/f27770c6-34cb-4d84-8343-60e22f66a405" />
+
+
+### Psudonimo
+
+
+
+do
+{
+    Instrucción_1;
+    Instrucción_2;
+    Modificación_de_Variable_de_Control;
+} while(Condición_booleana);
+
+
+
+
 
 - **Ciclo Para (For):** El ciclo Para (For) es aquella estructura de control repetitiva que empleamos cuando sabemos de antemano cuántas veces queremos que se ejecute un bloque de código, es decir, exactamente el número de veces.
 Por otro lado, a diferencia de, el While o el Do-While que se ven sometidos a una condición que podría cambiar en el transcurrir del tiempo, el ciclo For está hecho para llevar una cuenta matemática correcta. Para ello, en su estructura agrupa tres elementos importantes en una sola línea:
@@ -201,6 +280,16 @@ La inicialización: Crea una variable "contador" (comúnmente nombrada como i) y
 La condición: El límite que le dice al ciclo cuando detenerse (ej. mientras i < 10).
 El incremento/decremento: El incremento o decremento que le hacemos al contador en cada vuelta (ej. sumarle 1 a i: i++).
 <img width="1024" height="1024" alt="image" src="https://github.com/user-attachments/assets/fca5e59d-8631-496d-a29b-6f0ae637846e" />
+
+
+### Psudonimo
+
+
+for(Inicialización; Condición_booleana; Incremento_o_Decremento)
+{
+    Instrucción_1;
+    Instrucción_2;
+}
 
 ## Ejercicio Practico:structura condicional y repetitiva.
 
