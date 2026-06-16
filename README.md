@@ -178,12 +178,8 @@ Básicamente le dice al programa: "evalúa esto. Si me devuelves 'verdadero' eje
 
 ### Psudonimo
 
-if(Condición_booleana)
-{
-    Instrucción_1;
-    Instrucción_2;
-    Instrucción_3;
-}
+<img width="837" height="469" alt="image" src="https://github.com/user-attachments/assets/3a9dba88-7c95-4f43-8d2a-358d6fecb1fb" />
+
 
 
 
@@ -193,18 +189,10 @@ En español se puede traducir como: "Si se da la condición, haz la Acción A; S
 
 ### Psudonimo
 
+<img width="841" height="527" alt="image" src="https://github.com/user-attachments/assets/b0ec74da-8b62-4a53-a9ca-af3c67673c44" />
 
 
-if(Condición_booleana)
-{
-    Instrucción_si_es_Verdadero_1;
-    Instrucción_si_es_Verdadero_2;
-}
-else
-{
-    Instrucción_si_es_Falso_1;
-    Instrucción_si_es_Falso_2;
-}
+
 
 - **Condicional Múltiple (switch):** El Condicional Múltiple (switch) es el tipo de control que empleamos cuando una única variable puede ser evaluada para distintos valores y hacer un camino alternativo en cada caso.Lejos de encadenar diez bloques de if- else if lo que haría que el código fuese larguísimo y superdificil de leer , el switch evalúa la variable en una sola ocasión saltando directamente al "case" que coincida con el valor dado.
  <img width="1024" height="614" alt="image" src="https://github.com/user-attachments/assets/1065a472-5468-426a-977a-6a8ac53d0c5d" />
@@ -213,20 +201,7 @@ else
  ### Psudonimo
 
 
- switch(Variable_o_Expresión)
-{
-    case Valor_1:
-        Instrucción_Caso_1;
-        break;
-        
-    case Valor_2:
-        Instrucción_Caso_2;
-        break;
-        
-    default:
-        Instrucción_si_ninguno_coincide;
-        break;
-}
+<img width="849" height="517" alt="image" src="https://github.com/user-attachments/assets/ad38b0d0-76bd-4de7-8f42-33ba208087e3" />
 
 
  
@@ -242,12 +217,8 @@ Dicho ciclo se denomina también como una estructura de "pre-condición" pues el
 ### Psudonimo
 
 
-while(Condición_booleana)
-{
-    Instrucción_1;
-    Instrucción_2;
-    Modificación_de_Variable_de_Control; 
-}
+<img width="801" height="461" alt="image" src="https://github.com/user-attachments/assets/cb56d359-afc5-4e45-984d-dfed7a43cab2" />
+
 
 
 
@@ -263,12 +234,8 @@ A la inversa del ciclo While (que comprueba la condición antes de entrar), el D
 
 
 
-do
-{
-    Instrucción_1;
-    Instrucción_2;
-    Modificación_de_Variable_de_Control;
-} while(Condición_booleana);
+<img width="807" height="428" alt="image" src="https://github.com/user-attachments/assets/3ce3e303-908b-4aa9-af8a-246accb249ef" />
+
 
 
 
@@ -285,11 +252,10 @@ El incremento/decremento: El incremento o decremento que le hacemos al contador 
 ### Psudonimo
 
 
-for(Inicialización; Condición_booleana; Incremento_o_Decremento)
-{
-    Instrucción_1;
-    Instrucción_2;
-}
+<img width="798" height="464" alt="image" src="https://github.com/user-attachments/assets/78ee7ec1-6ffd-4e44-8bdb-95ba9b15f1d6" />
+
+
+
 
 ## Ejercicio Practico:structura condicional y repetitiva.
 
