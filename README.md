@@ -309,7 +309,25 @@ En cambio, si haces tus diagramas de flujo bien y tiras tus pruebas de escritori
 ## unidad 3
 
 
+ ####Proximamente......<img width="800" height="800" alt="image" src="https://github.com/user-attachments/assets/13030add-8d41-4974-b801-85c521859c90" />
+
+
 
 
 
 </details>
+
+<details>
+  <summary>📂 <b>BIBLIOGRAFIA:</b></summary>
+  <br>
+  <blockquote>
+
+
+
+
+
+
+
+
+  </details>
+
