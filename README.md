@@ -326,15 +326,20 @@ En cambio, si haces tus diagramas de flujo bien y tiras tus pruebas de escritori
 #### Unidad1 
 	  
  Cairó Battistutti, O. (2005). Metodología de la programación: Algoritmos, diagramas de flujo y programas (3ra ed.). Alfaomega.
+ 
 Joyanes Aguilar, L. (2008). Fundamentos de programación: Algoritmos, estructura de datos y objetos (4ta ed.). McGraw-Hill
+
 Brookshear, J. G. (2012). Introducción a la computación (11va ed.). Pearson Educación.
+
 Resnick, M. (2019). Cultivar la creatividad: El aprendizaje a través de proyectos, la pasión, los compañeros y el juego. Programamos.
 
 #### Unidad2
 
 
 Joyanes Aguilar, L. (2008). Fundamentos de programación: Algoritmos, estructura de datos y objetos (4ta ed.). McGraw-Hill.
+
 Cairó Battistutti, O. (2005). Metodología de la programación: Algoritmos, diagramas de flujo y programas (3ra ed.). Alfaomega.
+
 McConnell, S. (2004). Code Complete: A Practical Handbook of Software Construction (2da ed.). Microsoft Press.
 
 
