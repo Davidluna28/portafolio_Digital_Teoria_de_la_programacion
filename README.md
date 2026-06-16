@@ -315,7 +315,36 @@ En cambio, si haces tus diagramas de flujo bien y tiras tus pruebas de escritori
 
 
 
+
+
+
+
+
+
+
 </details>
+
+
+
+
+<details>
+  <summary>📂 <b>Concluciones:</b></summary>
+  <br>
+  <blockquote>
+
+
+
+
+
+
+
+
+</details>
+
+
+
+
+
 
 <details>
   <summary>📂 <b>Bibliografia:</b></summary>
@@ -349,4 +378,20 @@ McConnell, S. (2004). Code Complete: A Practical Handbook of Software Constructi
 
 
   </details>
+
+
+
+
+
+<details>
+  <summary>📂 <b>Uso de la IA:</b></summary>
+  <br>
+  <blockquote>
+
+
+
+
+
+ </details>
+  
 
