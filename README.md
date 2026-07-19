@@ -372,17 +372,17 @@ La **modularidad** es un paradigma de diseño de software que fundamenta la desc
 Esta estructura permite la **encapsulación de la lógica**, lo que facilita el desarrollo paralelo, la reutilización de componentes y una gestión de errores más granular. En el contexto de la ingeniería de software, la modularidad es el pilar que permite la escalabilidad del sistema y la mantenibilidad a largo plazo, ya que permite modificar o actualizar secciones aisladas del código sin comprometer la integridad estructural del programa completo.
 
 ### Ventajas:
-**Facilidad de Mantenimiento y Depuración**: Al estar el código fragmentado en módulos, el aislamiento de errores se vuelve mucho más sencillo. Si surge un fallo, es posible localizarlo y corregirlo dentro de un módulo específico sin tener que realizar cambios profundos en el sistema central o afectar áreas no relacionadas.
+ * **Facilidad de Mantenimiento y Depuración**: Al estar el código fragmentado en módulos, el aislamiento de errores se vuelve mucho más sencillo. Si surge un fallo, es posible localizarlo y corregirlo dentro de un módulo específico sin tener que realizar cambios profundos en el sistema central o afectar áreas no relacionadas.
 
-**Reutilización de Código**: Los módulos bien diseñados funcionan como componentes independientes (como "piezas de Lego"). Esto permite que, una vez que una funcionalidad ha sido implementada y probada, pueda ser reutilizada en otros proyectos o en diferentes secciones del mismo programa, evitando la duplicidad de esfuerzos.
+* **Reutilización de Código**: Los módulos bien diseñados funcionan como componentes independientes (como "piezas de Lego"). Esto permite que, una vez que una funcionalidad ha sido implementada y probada, pueda ser reutilizada en otros proyectos o en diferentes secciones del mismo programa, evitando la duplicidad de esfuerzos.
 
-**Desarrollo Paralelo**: En equipos de trabajo, la modularidad permite que diferentes desarrolladores trabajen en módulos distintos simultáneamente. Como la comunicación entre módulos se realiza a través de interfaces estandarizadas, el avance de un integrante no depende necesariamente de la finalización del trabajo de otro.
+* **Desarrollo Paralelo**: En equipos de trabajo, la modularidad permite que diferentes desarrolladores trabajen en módulos distintos simultáneamente. Como la comunicación entre módulos se realiza a través de interfaces estandarizadas, el avance de un integrante no depende necesariamente de la finalización del trabajo de otro.
 
-**Legibilidad y Comprensión**: Un sistema modular es mucho más fácil de entender para nuevos integrantes o para el mismo autor después de un tiempo. Reduce la carga cognitiva, ya que permite al programador enfocarse en la lógica específica de un solo componente en lugar de intentar procesar todo el sistema de una sola vez.
+* **Legibilidad y Comprensión**: Un sistema modular es mucho más fácil de entender para nuevos integrantes o para el mismo autor después de un tiempo. Reduce la carga cognitiva, ya que permite al programador enfocarse en la lógica específica de un solo componente en lugar de intentar procesar todo el sistema de una sola vez.
 
-**Escalabilidad y Flexibilidad**: La modularidad permite extender las funcionalidades de un software de manera controlada. Si necesitas agregar una nueva característica, puedes desarrollar un nuevo módulo e integrarlo al sistema existente, lo que minimiza el riesgo de que la nueva implementación rompa la estructura funcional anterior.
+* **Escalabilidad y Flexibilidad**: La modularidad permite extender las funcionalidades de un software de manera controlada. Si necesitas agregar una nueva característica, puedes desarrollar un nuevo módulo e integrarlo al sistema existente, lo que minimiza el riesgo de que la nueva implementación rompa la estructura funcional anterior.
 
-**Mejora en las Pruebas (Testing)**: Es mucho más eficiente realizar pruebas unitarias sobre módulos independientes. Esto garantiza que cada pequeño componente funcione según lo previsto de forma aislada antes de integrarse al conjunto, asegurando una mayor robustez global.
+* **Mejora en las Pruebas (Testing)**: Es mucho más eficiente realizar pruebas unitarias sobre módulos independientes. Esto garantiza que cada pequeño componente funcione según lo previsto de forma aislada antes de integrarse al conjunto, asegurando una mayor robustez global.
 
 ### Tipos de pases de parametros:
 
@@ -404,38 +404,17 @@ En este método, se crea una copia del valor del argumento original y se le asig
 #### Paso por referencia:
 En lugar de pasar el valor del dato, se pasa la dirección de memoria (o una referencia) donde reside dicho dato.
 
-Comportamiento: La función llamada opera directamente sobre la ubicación de memoria del argumento original. Por lo tanto, cualquier cambio realizado dentro de la función sí afecta a la variable original.
+* Comportamiento: La función llamada opera directamente sobre la ubicación de memoria del argumento original. Por lo tanto, cualquier cambio realizado dentro de la función sí afecta a la variable original.
 
-Uso en C: Se implementa mediante el uso de punteros. Pasas la dirección (&variable) y la función la recibe en un puntero (*ptr).
+* Uso : Se implementa mediante el uso de punteros. Pasas la dirección (&variable) y la función la recibe en un puntero (*ptr).
 
-Ventaja: Alta eficiencia, ya que no es necesario copiar datos voluminosos. Además, permite que una función devuelva múltiples valores modificando los parámetros recibidos.
+* Ventaja: Alta eficiencia, ya que no es necesario copiar datos voluminosos. Además, permite que una función devuelva múltiples valores modificando los parámetros recibidos.
 
-Desventaja: Mayor riesgo de errores (efectos secundarios inesperados) si la lógica no está bien controlada, ya que la integridad de los datos originales puede verse comprometida.
+* Desventaja: Mayor riesgo de errores (efectos secundarios inesperados) si la lógica no está bien controlada, ya que la integridad de los datos originales puede verse comprometida.
 
 ### Ejemplo:
-#include <stdio.h>
+<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/9945344e-5d00-40f0-a2fb-94a1f9550842" />
 
-// La función recibe la dirección de memoria de la variable original.
-// Usamos un puntero (int *ptr) para capturar esa dirección.
-void incrementarReferencia(int *ptr) {
-    // Usamos el operador * para acceder al valor almacenado en esa dirección.
-    *ptr = *ptr + 10;
-    printf("Valor dentro de la funcion (via puntero): %d\n", *ptr);
-}
-
-int main() {
-    int x = 20;
-
-    printf("Valor antes de llamar a la funcion: %d\n", x);
-    
-    // Pasamos la dirección de memoria de x usando el operador &
-    incrementarReferencia(&x);
-    
-    // Ahora x ha sido modificado externamente.
-    printf("Valor despues de la funcion: %d\n", x);
-
-    return 0;
-}
 
 ### Tabla Comparativa:
 
@@ -450,7 +429,7 @@ int main() {
 
 
 
- #### Proximamente......
+ 
 
 
 
