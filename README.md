@@ -325,6 +325,8 @@ int main() {
 <img width="500" alt="Salida del programa unidad 2" src="https://github.com/user-attachments/assets/d079fc1b-5966-4694-b9c7-258aad6ca015" />
 
 > [!WARNING]
+>
+> 
 > **Principales dificultades**
 > - **El bucle infinito y la computadora congelada**: en `while` y `do-while` hay que recordar modificar siempre la variable de control dentro del ciclo. Si se olvida, la condición nunca se vuelve falsa y el programa corre indefinidamente.
 > - **La "caída libre" del `switch` por el `break`**: si se omite el `break` al final de un `case`, el compilador no avisa nada — simplemente continúa ejecutando los casos siguientes, generando resultados inesperados y difíciles de depurar.
@@ -332,6 +334,8 @@ int main() {
 > - **El desfase por uno (*off-by-one error*) en el `for`**: es fácil equivocarse en el límite (usar `<=` en lugar de `<`), lo que provoca una vuelta de más o de menos, especialmente problemático al trabajar con posiciones exactas.
 
 > [!TIP]
+>
+> 
 > **Reflexión crítica**
 > Aprender estas estructuras confirma que programar exige construir la lógica antes de escribir código. Llevar un diagrama de flujo o un pseudocódigo hacia condicionales y ciclos anidados implica un salto importante, sobre todo cuando un `if` queda dentro de un `for` y la lógica empieza a complicarse. Elaborar bien los diagramas de flujo y ejecutar pruebas de escritorio a mano —evaluando qué ocurre si la condición es verdadera o falsa— evita muchos errores de ejecución. Al final, se trata de ser ordenado, elegir la estructura que el problema realmente necesita, y entender que cada decisión o repetición cuenta para que el programa no falle.
 
@@ -436,12 +440,16 @@ Añaden profundidad a la matriz: si un arreglo 2D es una "página" de datos, uno
 <img width="600" alt="Arreglo tridimensional" src="https://github.com/user-attachments/assets/2bcc7cf2-cbf9-4c8f-a5b9-533a16f4cc06" />
 
 > [!WARNING]
+
+
 > **Principales dificultades en la aplicación de los contenidos**
 > Durante el desarrollo de este trabajo sobre modularidad y arreglos, el mayor obstáculo fue asimilar la distinción real entre pasar un parámetro por valor y pasarlo por referencia. En un primer momento no lograba explicarme por qué, si en apariencia ambos mecanismos "entregaban" el mismo dato a la función, solo uno de ellos terminaba modificando la variable original. Fue necesario ejecutar distintos casos y seguir su comportamiento línea por línea para notar que todo dependía de qué se estaba enviando en realidad: una copia del contenido o la dirección donde ese contenido vive en memoria. A partir de ese momento entendí con más sentido por qué, cuando se busca que una función altere directamente la variable original, resulta indispensable recurrir al operador `&`.
 >
 > Respecto a los arreglos, no fueron los de una sola dimensión los que representaron un reto, dado que su comportamiento resulta casi natural de entender (una simple secuencia de valores localizables mediante un índice). El verdadero desafío apareció con las matrices y, más adelante, con las estructuras de tres dimensiones. Al operar con arreglos bidimensionales tuve que ensayar repetidamente con bucles anidados, ya que en un principio no tenía claro el orden correcto para recorrer filas y columnas, lo que me llevaba a dejar espacios sin asignar valor o a consultar posiciones equivocadas. Ese nivel de dificultad se incrementó al incorporar una tercera dimensión, pues ahí ya no bastaba con pensar en una tabla: había que representarse mentalmente varios planos o capas superpuestas, una imagen bastante más difícil de construir que la de un vector simple o una matriz plana.
 
 > [!TIP]
+
+
 > **Reflexión crítica**
 > La modularidad y los arreglos son contenidos que se entrelazan de forma constante en la práctica real de programar, dado que resulta habitual que las funciones reciban arreglos como parte de sus parámetros. En ese contexto, dominar la diferencia entre el paso por valor y por referencia deja de ser un simple detalle teórico, porque transferir un arreglo completo por valor implicaría un gasto de memoria innecesario y poco eficiente. La posibilidad de poner en práctica estos ejercicios durante las clases demostró que conocer la teoría no basta por sí sola: hace falta programar, equivocarse y corregir el rumbo para llegar a comprender de verdad cómo se comportan los parámetros y de qué manera se recorren los distintos tipos de arreglos. En síntesis, fue la práctica sostenida la que marcó la diferencia entre memorizar conceptos de forma superficial y realmente apropiarse de ellos.
 
@@ -456,6 +464,8 @@ Añaden profundidad a la matriz: si un arreglo 2D es una "página" de datos, uno
 <summary><h2 style="display:inline">🧭 Conclusiones generales</h2></summary>
 
 > [!IMPORTANT]
+
+
 > Uno de los primeros aprendizajes que este proceso me dejó fue la importancia de analizar el problema antes de sentarme a programar. Apoyarme en pseudocódigo y en diagramas de flujo me permitió entender con claridad qué se esperaba resolver antes de escribir una sola línea de código, y la prueba de escritorio se convirtió en una especie de control de calidad previo: gracias a ella pude confirmar que mi razonamiento era correcto y detectar fallos antes de llegar a la versión final del programa.
 
 A partir de esa base, comencé a trabajar con las **estructuras secuenciales**, lo que me permitió visualizar con claridad el orden en que la computadora ejecuta cada instrucción, una detrás de otra. Pasar de trabajar con bloques visuales a escribir código directamente me resultó bastante natural, y eso facilitó acostumbrarme rápido a la sintaxis y resolver sin mayor problema los ejercicios propuestos en clase.
@@ -481,6 +491,10 @@ Con esas bases de control de flujo ya asentadas, avancé hacia dos contenidos fu
 4. M. Resnick, *Cultivar la creatividad: El aprendizaje a través de proyectos, la pasión, los compañeros y el juego*. Programamos, 2019.
 
 **Unidad 2**
+
+
+
+
 5. L. Joyanes Aguilar, *Fundamentos de programación: Algoritmos, estructura de datos y objetos*, 4.ª ed. Madrid: McGraw-Hill, 2008.
 6. O. Cairó Battistutti, *Metodología de la programación: Algoritmos, diagramas de flujo y programas*, 3.ª ed. México, D.F.: Alfaomega, 2005.
 7. S. McConnell, *Code Complete: A Practical Handbook of Software Construction*, 2.ª ed. Redmond, WA: Microsoft Press, 2004.
@@ -502,6 +516,8 @@ Con esas bases de control de flujo ya asentadas, avancé hacia dos contenidos fu
 <summary><h2 style="display:inline">🤖 Uso de la IA</h2></summary>
 
 > [!NOTE]
+
+
 > Declaro que para la elaboración de este portafolio digital se utilizaron herramientas de inteligencia artificial —como ChatGPT, Gemini y NotebookLM— como apoyo en la redacción, corrección de estilo y organización del contenido. El análisis, la resolución de ejercicios, la elaboración de diagramas de flujo y el desarrollo de código fueron realizados por mi persona.
 
 <div align="right"><a href="#top">⬆ Volver arriba</a></div>
