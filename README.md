@@ -372,53 +372,34 @@ La **modularidad** es un paradigma de diseño de software que fundamenta la desc
 Esta estructura permite la **encapsulación de la lógica**, lo que facilita el desarrollo paralelo, la reutilización de componentes y una gestión de errores más granular. En el contexto de la ingeniería de software, la modularidad es el pilar que permite la escalabilidad del sistema y la mantenibilidad a largo plazo, ya que permite modificar o actualizar secciones aisladas del código sin comprometer la integridad estructural del programa completo.
 
 ### Ventajas:
-Facilidad de Mantenimiento y Depuración: Al estar el código fragmentado en módulos, el aislamiento de errores se vuelve mucho más sencillo. Si surge un fallo, es posible localizarlo y corregirlo dentro de un módulo específico sin tener que realizar cambios profundos en el sistema central o afectar áreas no relacionadas.
+**Facilidad de Mantenimiento y Depuración**: Al estar el código fragmentado en módulos, el aislamiento de errores se vuelve mucho más sencillo. Si surge un fallo, es posible localizarlo y corregirlo dentro de un módulo específico sin tener que realizar cambios profundos en el sistema central o afectar áreas no relacionadas.
 
-Reutilización de Código: Los módulos bien diseñados funcionan como componentes independientes (como "piezas de Lego"). Esto permite que, una vez que una funcionalidad ha sido implementada y probada, pueda ser reutilizada en otros proyectos o en diferentes secciones del mismo programa, evitando la duplicidad de esfuerzos.
+**Reutilización de Código**: Los módulos bien diseñados funcionan como componentes independientes (como "piezas de Lego"). Esto permite que, una vez que una funcionalidad ha sido implementada y probada, pueda ser reutilizada en otros proyectos o en diferentes secciones del mismo programa, evitando la duplicidad de esfuerzos.
 
-Desarrollo Paralelo: En equipos de trabajo, la modularidad permite que diferentes desarrolladores trabajen en módulos distintos simultáneamente. Como la comunicación entre módulos se realiza a través de interfaces estandarizadas, el avance de un integrante no depende necesariamente de la finalización del trabajo de otro.
+**Desarrollo Paralelo**: En equipos de trabajo, la modularidad permite que diferentes desarrolladores trabajen en módulos distintos simultáneamente. Como la comunicación entre módulos se realiza a través de interfaces estandarizadas, el avance de un integrante no depende necesariamente de la finalización del trabajo de otro.
 
-Legibilidad y Comprensión: Un sistema modular es mucho más fácil de entender para nuevos integrantes o para el mismo autor después de un tiempo. Reduce la carga cognitiva, ya que permite al programador enfocarse en la lógica específica de un solo componente en lugar de intentar procesar todo el sistema de una sola vez.
+**Legibilidad y Comprensión**: Un sistema modular es mucho más fácil de entender para nuevos integrantes o para el mismo autor después de un tiempo. Reduce la carga cognitiva, ya que permite al programador enfocarse en la lógica específica de un solo componente en lugar de intentar procesar todo el sistema de una sola vez.
 
-Escalabilidad y Flexibilidad: La modularidad permite extender las funcionalidades de un software de manera controlada. Si necesitas agregar una nueva característica, puedes desarrollar un nuevo módulo e integrarlo al sistema existente, lo que minimiza el riesgo de que la nueva implementación rompa la estructura funcional anterior.
+**Escalabilidad y Flexibilidad**: La modularidad permite extender las funcionalidades de un software de manera controlada. Si necesitas agregar una nueva característica, puedes desarrollar un nuevo módulo e integrarlo al sistema existente, lo que minimiza el riesgo de que la nueva implementación rompa la estructura funcional anterior.
 
-Mejora en las Pruebas (Testing): Es mucho más eficiente realizar pruebas unitarias sobre módulos independientes. Esto garantiza que cada pequeño componente funcione según lo previsto de forma aislada antes de integrarse al conjunto, asegurando una mayor robustez global.
+**Mejora en las Pruebas (Testing)**: Es mucho más eficiente realizar pruebas unitarias sobre módulos independientes. Esto garantiza que cada pequeño componente funcione según lo previsto de forma aislada antes de integrarse al conjunto, asegurando una mayor robustez global.
 
 ### Tipos de pases de parametros:
 
 #### Paso por valor:
 En este método, se crea una copia del valor del argumento original y se le asigna a la variable local de la función llamada.
 
-Comportamiento: Cualquier modificación que la función realice sobre el parámetro no afecta a la variable original en el ámbito de la función que la llamó.
+* Comportamiento: Cualquier modificación que la función realice sobre el parámetro no afecta a la variable original en el ámbito de la función que la llamó.
 
-Uso: Es el método por defecto en lenguajes como C para tipos de datos primitivos (int, float, char).
+* Uso: Es el método por defecto en lenguajes como C para tipos de datos primitivos (int, float, char).
 
-Ventaja: Seguridad, ya que los datos originales están protegidos contra efectos secundarios no deseados.
+* Ventaja: Seguridad, ya que los datos originales están protegidos contra efectos secundarios no deseados.
 
-Desventaja: Puede ser ineficiente si los datos son estructuras de gran tamaño, debido al consumo de memoria y tiempo requerido para realizar la copia.
+* Desventaja: Puede ser ineficiente si los datos son estructuras de gran tamaño, debido al consumo de memoria y tiempo requerido para realizar la copia.
 
 ### Ejemplo:
-#include <stdio.h>
+<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/1989aa8c-b9d3-4d53-9f34-00589da03351" />
 
-// La función recibe una copia del valor. 
-// Cualquier cambio aquí no afecta a la variable original 'x'.
-void incrementar(int n) {
-    n = n + 10;
-    printf("Valor dentro de la funcion: %d\n", n);
-}
-
-int main() {
-    int x = 20;
-
-    printf("Valor antes de llamar a la funcion: %d\n", x);
-    
-    incrementar(x);
-    
-    // Al regresar, x conserva su valor original debido a que solo se copió.
-    printf("Valor despues de la funcion: %d\n", x);
-
-    return 0;
-}
 
 #### Paso por referencia:
 En lugar de pasar el valor del dato, se pasa la dirección de memoria (o una referencia) donde reside dicho dato.
