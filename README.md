@@ -450,15 +450,39 @@ O(1), independientemente del tamaño del arreglo o de la posición solicitada.
 
 ### Tipos de arreglos:
 
-* **Arreglos Unidimensionales (Vectores)**:
+#### Arreglos Unidimensionales (Vectores):
 Se comportan como una secuencia lineal de elementos. Es la estructura más básica para representar conjuntos de datos donde el orden importa pero no existe una relación jerárquica compleja.
 
-*Lógica: Imagina una lista de la compra o una serie de mediciones de temperatura tomadas a lo largo de una hora. Solo necesitas una coordenada (el índice) para identificar un valor.
+* Lógica: Imagina una lista de la compra o una serie de mediciones de temperatura tomadas a lo largo de una hora. Solo necesitas una coordenada (el índice) para identificar un valor.
 
-*Técnica: En memoria, el compilador reserva un bloque contiguo de tamaño N * sizeof(tipo_de_dato). Para acceder al elemento en la posición i, el procesador simplemente salta i posiciones desde la dirección base.
+* Técnica: En memoria, el compilador reserva un bloque contiguo de tamaño N * sizeof(tipo_de_dato). Para acceder al elemento en la posición i, el procesador simplemente salta i posiciones desde la dirección base.
+
+### Ejemplo:
+<img width="1200" height="1524" alt="arreglo_unidimensional" src="https://github.com/user-attachments/assets/0bb47d9d-19de-4eb8-afe5-7f8116c8f729" />
 
 
+#### Arreglos Bidimensionales (Matrices)
+Se estructuran como una tabla de dos dimensiones. Aunque en la memoria física (RAM) los datos se almacenan de forma lineal, el lenguaje de programación los mapea lógicamente en filas y columnas.
+
+* Lógica: Ideal para representar datos tabulares, como las celdas de una hoja de cálculo, los píxeles de una imagen en escala de grises o los movimientos en un tablero de ajedrez.
+
+* Técnica: Se organizan usualmente en formato Row-Major Order (primero una fila completa, luego la siguiente). Para acceder a matriz[i][j], el compilador realiza una operación aritmética: Dirección_base + (i * número_de_columnas + j) * tamaño_dato.
  
+### Ejemplo:
+
+<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/f9d52de5-bf6d-4f6f-95eb-b338b089c059" />
+
+
+
+#### Arreglos Multidimensionales (3D o superior)
+Son estructuras que añaden profundidad a la matriz. Mientras un arreglo 2D es una "página" de datos, un arreglo 3D es un "libro" (un conjunto de páginas).
+* Lógica: Se utilizan para representar datos de mayor complejidad. Un ejemplo clásico es el procesamiento de imágenes a color (RGB), donde la primera dimensión es el ancho, la segunda el alto y la tercera los canales de color (Rojo, Verde, Azul). También son comunes en simulaciones físicas o modelos matemáticos tridimensionales.
+* Técnica: La complejidad de direccionamiento aumenta. El compilador calcula la dirección basándose en el producto de las dimensiones anteriores. A mayor dimensión, más cuidado debe tener el programador con el consumo de memoria, ya que el tamaño total del arreglo crece de forma exponencial ($N_1 \times N_2 \times N_3 \dots$).
+
+### Ejemplo:
+
+<img width="1200" height="1804" alt="arreglo_tridimensional (1)" src="https://github.com/user-attachments/assets/2bcc7cf2-cbf9-4c8f-a5b9-533a16f4cc06" />
+
 
 
 
