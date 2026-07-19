@@ -33,16 +33,7 @@
 <a id="top"></a>
 <div align="center">
 
-# 🎓 Portafolio Digital — Fundamentos de Programación
 
-![Lenguaje](https://img.shields.io/badge/Lenguaje-C-00599C?logo=c&logoColor=white)
-![Estado](https://img.shields.io/badge/Estado-Completo-brightgreen)
-![Unidades](https://img.shields.io/badge/Unidades-3-blue)
-![Apoyo IA](https://img.shields.io/badge/Redacci%C3%B3n-Apoyada%20con%20IA-9cf)
-
-Portafolio de ejercicios, teoría y reflexiones desarrollados a lo largo del curso: desde los fundamentos del pensamiento algorítmico hasta la modularidad y el manejo de arreglos en C.
-
-</div>
 
 ---
 
