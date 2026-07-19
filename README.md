@@ -441,20 +441,19 @@ Añaden profundidad a la matriz: si un arreglo 2D es una "página" de datos, uno
 
 
 
-> ### Principales dificultades en la aplicación de los contenidos:
+ ### Principales dificultades en la aplicación de los contenidos:
 
 
-> Durante el desarrollo de este trabajo sobre modularidad y arreglos, el mayor obstáculo fue asimilar la distinción real entre pasar un parámetro por valor y pasarlo por referencia. En un primer momento no lograba explicarme por qué, si en apariencia ambos mecanismos "entregaban" el mismo dato a la función, solo uno de ellos terminaba modificando la variable original. Fue necesario ejecutar distintos casos y seguir su comportamiento línea por línea para notar que todo dependía de qué se estaba enviando en realidad: una copia del contenido o la dirección donde ese contenido vive en memoria. A partir de ese momento entendí con más sentido por qué, cuando se busca que una función altere directamente la variable original, resulta indispensable recurrir al operador `&`.
->
-> Respecto a los arreglos, no fueron los de una sola dimensión los que representaron un reto, dado que su comportamiento resulta casi natural de entender (una simple secuencia de valores localizables mediante un índice). El verdadero desafío apareció con las matrices y, más adelante, con las estructuras de tres dimensiones. Al operar con arreglos bidimensionales tuve que ensayar repetidamente con bucles anidados, ya que en un principio no tenía claro el orden correcto para recorrer filas y columnas, lo que me llevaba a dejar espacios sin asignar valor o a consultar posiciones equivocadas. Ese nivel de dificultad se incrementó al incorporar una tercera dimensión, pues ahí ya no bastaba con pensar en una tabla: había que representarse mentalmente varios planos o capas superpuestas, una imagen bastante más difícil de construir que la de un vector simple o una matriz plana.
+* Durante el desarrollo de este trabajo sobre modularidad y arreglos, el mayor obstáculo fue asimilar la distinción real entre pasar un parámetro por valor y pasarlo por referencia. En un primer momento no lograba explicarme por qué, si en apariencia ambos mecanismos "entregaban" el mismo dato a la función, solo uno de ellos terminaba modificando la variable original. Fue necesario ejecutar distintos casos y seguir su comportamiento línea por línea para notar que todo dependía de qué se estaba enviando en realidad: una copia del contenido o la dirección donde ese contenido vive en memoria. A partir de ese momento entendí con más sentido por qué, cuando se busca que una función altere directamente la variable original, resulta indispensable recurrir al operador `&`.
+
+* Respecto a los arreglos, no fueron los de una sola dimensión los que representaron un reto, dado que su comportamiento resulta casi natural de entender (una simple secuencia de valores localizables mediante un índice). El verdadero desafío apareció con las matrices y, más adelante, con las estructuras de tres dimensiones. Al operar con arreglos bidimensionales tuve que ensayar repetidamente con bucles anidados, ya que en un principio no tenía claro el orden correcto para recorrer filas y columnas, lo que me llevaba a dejar espacios sin asignar valor o a consultar posiciones equivocadas. Ese nivel de dificultad se incrementó al incorporar una tercera dimensión, pues ahí ya no bastaba con pensar en una tabla: había que representarse mentalmente varios planos o capas superpuestas, una imagen bastante más difícil de construir que la de un vector simple o una matriz plana.
+
+
+ ### Reflexión crítica:
 
 
 
-> ### Reflexión crítica:
-
-
-
-> La modularidad y los arreglos son contenidos que se entrelazan de forma constante en la práctica real de programar, dado que resulta habitual que las funciones reciban arreglos como parte de sus parámetros. En ese contexto, dominar la diferencia entre el paso por valor y por referencia deja de ser un simple detalle teórico, porque transferir un arreglo completo por valor implicaría un gasto de memoria innecesario y poco eficiente. La posibilidad de poner en práctica estos ejercicios durante las clases demostró que conocer la teoría no basta por sí sola: hace falta programar, equivocarse y corregir el rumbo para llegar a comprender de verdad cómo se comportan los parámetros y de qué manera se recorren los distintos tipos de arreglos. En síntesis, fue la práctica sostenida la que marcó la diferencia entre memorizar conceptos de forma superficial y realmente apropiarse de ellos.
+* La modularidad y los arreglos son contenidos que se entrelazan de forma constante en la práctica real de programar, dado que resulta habitual que las funciones reciban arreglos como parte de sus parámetros. En ese contexto, dominar la diferencia entre el paso por valor y por referencia deja de ser un simple detalle teórico, porque transferir un arreglo completo por valor implicaría un gasto de memoria innecesario y poco eficiente. La posibilidad de poner en práctica estos ejercicios durante las clases demostró que conocer la teoría no basta por sí sola: hace falta programar, equivocarse y corregir el rumbo para llegar a comprender de verdad cómo se comportan los parámetros y de qué manera se recorren los distintos tipos de arreglos. En síntesis, fue la práctica sostenida la que marcó la diferencia entre memorizar conceptos de forma superficial y realmente apropiarse de ellos.
 
 <div align="right"><a href="#top">⬆ Volver arriba</a></div>
 
@@ -468,7 +467,7 @@ Añaden profundidad a la matriz: si un arreglo 2D es una "página" de datos, uno
 
 
 
-> Uno de los primeros aprendizajes que este proceso me dejó fue la importancia de analizar el problema antes de sentarme a programar. Apoyarme en pseudocódigo y en diagramas de flujo me permitió entender con claridad qué se esperaba resolver antes de escribir una sola línea de código, y la prueba de escritorio se convirtió en una especie de control de calidad previo: gracias a ella pude confirmar que mi razonamiento era correcto y detectar fallos antes de llegar a la versión final del programa.
+ Uno de los primeros aprendizajes que este proceso me dejó fue la importancia de analizar el problema antes de sentarme a programar. Apoyarme en pseudocódigo y en diagramas de flujo me permitió entender con claridad qué se esperaba resolver antes de escribir una sola línea de código, y la prueba de escritorio se convirtió en una especie de control de calidad previo: gracias a ella pude confirmar que mi razonamiento era correcto y detectar fallos antes de llegar a la versión final del programa.
 
 A partir de esa base, comencé a trabajar con las **estructuras secuenciales**, lo que me permitió visualizar con claridad el orden en que la computadora ejecuta cada instrucción, una detrás de otra. Pasar de trabajar con bloques visuales a escribir código directamente me resultó bastante natural, y eso facilitó acostumbrarme rápido a la sintaxis y resolver sin mayor problema los ejercicios propuestos en clase.
 
@@ -486,26 +485,30 @@ Con esas bases de control de flujo ya asentadas, avancé hacia dos contenidos fu
 <details>
 <summary><h2 style="display:inline">📚 Bibliografía</h2></summary>
 
-**Unidad 1**
-1. O. Cairó Battistutti, *Metodología de la programación: Algoritmos, diagramas de flujo y programas*, 3.ª ed. México, D.F.: Alfaomega, 2005.
-2. L. Joyanes Aguilar, *Fundamentos de programación: Algoritmos, estructura de datos y objetos*, 4.ª ed. Madrid: McGraw-Hill, 2008.
-3. J. G. Brookshear, *Introducción a la computación*, 11.ª ed. Madrid: Pearson Educación, 2012.
-4. M. Resnick, *Cultivar la creatividad: El aprendizaje a través de proyectos, la pasión, los compañeros y el juego*. Programamos, 2019.
+### Unidad 1
+[1] O. Cairó Battistutti, Metodología de la programación: Algoritmos, diagramas de flujo y programas, 3.ª ed. México, D.F.: Alfaomega, 2005.
 
-**Unidad 2**
+[2] L. Joyanes Aguilar, Fundamentos de programación: Algoritmos, estructura de datos y objetos, 4.ª ed. Madrid: McGraw-Hill, 2008.
 
+[3] J. G. Brookshear, Introducción a la computación, 11.ª ed. Madrid: Pearson Educación, 2012.
 
+[4] M. Resnick, Cultivar la creatividad: El aprendizaje a través de proyectos, la pasión, los compañeros y el juego. Programamos, 2019.
 
+### Unidad 2
+[5] L. Joyanes Aguilar, Fundamentos de programación: Algoritmos, estructura de datos y objetos, 4.ª ed. Madrid: McGraw-Hill, 2008.
 
-5. L. Joyanes Aguilar, *Fundamentos de programación: Algoritmos, estructura de datos y objetos*, 4.ª ed. Madrid: McGraw-Hill, 2008.
-6. O. Cairó Battistutti, *Metodología de la programación: Algoritmos, diagramas de flujo y programas*, 3.ª ed. México, D.F.: Alfaomega, 2005.
-7. S. McConnell, *Code Complete: A Practical Handbook of Software Construction*, 2.ª ed. Redmond, WA: Microsoft Press, 2004.
+[6] O. Cairó Battistutti, Metodología de la programación: Algoritmos, diagramas de flujo y programas, 3.ª ed. México, D.F.: Alfaomega, 2005.
 
-**Unidad 3**
-1. B. W. Kernighan y D. M. Ritchie, *The C Programming Language*, 2.ª ed. Englewood Cliffs, NJ, EE. UU.: Prentice Hall, 1988.
-2. P. J. Deitel y H. M. Deitel, *C: How to Program*, 8.ª ed. Hoboken, NJ, EE. UU.: Pearson, 2016.
-3. R. Sedgewick y K. Wayne, *Algorithms*, 4.ª ed. Boston, MA, EE. UU.: Addison-Wesley Professional, 2011.
-4. S. G. Kochan, *Programming in C*, 4.ª ed. Upper Saddle River, NJ, EE. UU.: Addison-Wesley, 2015.
+[7] S. McConnell, Code Complete: A Practical Handbook of Software Construction, 2.ª ed. Redmond, WA: Microsoft Press, 2004.
+
+### Unidad 3
+[8] B. W. Kernighan y D. M. Ritchie, The C Programming Language, 2.ª ed. Englewood Cliffs, NJ, EE. UU.: Prentice Hall, 1988.
+
+[9] P. J. Deitel y H. M. Deitel, C: How to Program, 8.ª ed. Hoboken, NJ, EE. UU.: Pearson, 2016.
+
+[10] R. Sedgewick y K. Wayne, Algorithms, 4.ª ed. Boston, MA, EE. UU.: Addison-Wesley Professional, 2011.
+
+[11] S. G. Kochan, Programming in C, 4.ª ed. Upper Saddle River, NJ, EE. UU.: Addison-Wesley, 2015.
 
 <div align="right"><a href="#top">⬆ Volver arriba</a></div>
 
@@ -517,10 +520,9 @@ Con esas bases de control de flujo ya asentadas, avancé hacia dos contenidos fu
 <details>
 <summary><h2 style="display:inline">🤖 Uso de la IA</h2></summary>
 
-> [!NOTE]
 
 
-> Declaro que para la elaboración de este portafolio digital se utilizaron herramientas de inteligencia artificial —como ChatGPT, Gemini y NotebookLM— como apoyo en la redacción, corrección de estilo y organización del contenido. El análisis, la resolución de ejercicios, la elaboración de diagramas de flujo y el desarrollo de código fueron realizados por mi persona.
+ Declaro que para la elaboración de este portafolio digital se utilizaron herramientas de inteligencia artificial —como ChatGPT, Gemini y NotebookLM— como apoyo en la redacción, corrección de estilo y organización del contenido. El análisis, la resolución de ejercicios, la elaboración de diagramas de flujo y el desarrollo de código fueron realizados por mi persona.
 
 <div align="right"><a href="#top">⬆ Volver arriba</a></div>
 
