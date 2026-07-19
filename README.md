@@ -30,92 +30,128 @@
 
 ---
 
-<details>
-  <summary>📂 <b> Unidad 1: Fundamentos de Programación</b></summary>
-  <br>
-  <blockquote>
+<a id="top"></a>
+<div align="center">
 
-## 📘 Unidad 1: Fundamentos de Programación
+# 🎓 Portafolio Digital — Fundamentos de Programación
 
-### Contenidos
-- **Algoritmo:** Definimos un algoritmo como una serie de instrucciones lógicas, ordenadas y finitas entre sí, mediante las cuales se soluciona un problema o existe una forma de procesar los datos. Se produce así una ejecución mediante un tipo de entrada (input), que se enfrenta a un conjunto de pasos concretos y que desemboca en una salida (output) del resultado esperado. Se puede entender como la base de todo lo que hace la programación, en el sentido de que se traduce la lógica humana a procesos que puede ejecutar la computadora de forma precisa.
-- <img width="1122" height="1402" alt="image" src="https://github.com/user-attachments/assets/be2420c8-9bfd-4d77-a244-a7d30a1401b7" />
+![Lenguaje](https://img.shields.io/badge/Lenguaje-C-00599C?logo=c&logoColor=white)
+![Estado](https://img.shields.io/badge/Estado-Completo-brightgreen)
+![Unidades](https://img.shields.io/badge/Unidades-3-blue)
+![Apoyo IA](https://img.shields.io/badge/Redacci%C3%B3n-Apoyada%20con%20IA-9cf)
 
+Portafolio de ejercicios, teoría y reflexiones desarrollados a lo largo del curso: desde los fundamentos del pensamiento algorítmico hasta la modularidad y el manejo de arreglos en C.
 
-- **Pseudocódigo:** El pseudocódigo es el recurso para describir un algoritmo a través de un lenguaje congenial que está justo entre el lenguaje humano y el lenguaje de programación. No se trata de la ejecución de un código, sino de una herramienta de diseño lógico que ayuda a estructurar un proceso que no tiene que estar sujeto a normas técnicas..
-- **Diagrama de flujo:** Un diagrama de flujo es la representación gráfica de un algoritmo o proceso, donde se emplean figuras geométricas para especificar y detallar cada uno de los pasos a realizar y flechas para explicar ordenar los pasos de forma lógica. Cada símbolo tiene un significado propio (los óvalos para el inicio/fin y los rombos para las decisiones, etc.) de forma que permite visualizar el camino de la información.
-- <img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/4c3e7758-d783-477d-947a-6ea52c459cf2" />
-- **Prueba de escritorio:** La prueba de escritorio es una forma de verificar la lógica mediante un proceso manual del algoritmo o del pseudocódigo que se quiere ejecutar, justo antes hacerlo en la computadora. Constituye la forma mediante la cual se elaboran las tablas en las que van figurando las variables y se van ejecutandolas instrucciones del pseudocódigo paso a paso asignando valores reales para ver cómo se producen los cambios. Este método permite detectar fallos de lógica, bucles infinitos, fallos en las condiciones, etc., de forma anticipada, a la vez que rápida y sencilla.
-- **Lenguajes de programación:** Un lenguaje de programación es el conjunto de reglas sintácticas y semánticas que permiten a una persona escribir indicaciones precisas que serán ejecutadas por una computadora. Es un traductor que va de la lógica con la que se resuelven problemas a un código que genera una máquina en lenguaje binario, lo que el hardware del sistema entiende.
-- **Programación por bloques:** Se trata de un recurso visual que facilita la creación de programas al conectar constituyentes gráficos que denotan instrucciones lógicas, eliminando la necesidad de codificar en un lenguaje de programación textual. En efecto, al conectar unos bloques con otros, como si de un rompecabezas se tratara, se asegura que la sintaxis que se aplica es la correcta y que el flujo es coherente.
-  <img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/e21c0c5b-402c-40c9-bdcf-c602b064f3b4" />
+</div>
 
-### Ejercicio: Estructura Secuencial (presupuesto de pintura)
+---
 
-#### 1. Planteamiento del problema
-Un almacén requiere determinar cuánto cobrar por trabajos de pintura. Considere que se cobra por m2. Realice el algoritmo que le permita ir generando presupuestos para cada cliente.
+## 📑 Tabla de contenidos
 
-#### 2. Análisis del problema
-* **Entradas:** largo (l), altura (h)
-* **Proceso:** area <- largo * alto
-		totalPagar <- area * costoPorM2
-* **Salida:** total a pagar 
+| # | Unidad | Contenido |
+|---|--------|-----------|
+| 1 | [Fundamentos de Programación](#unidad-1) | Algoritmos, pseudocódigo, diagramas de flujo, prueba de escritorio |
+| 2 | [Estructuras Condicionales y Repetitivas](#unidad-2) | `if`, `if-else`, `switch`, `while`, `do-while`, `for` |
+| 3 | [Modularidad y Arreglos](#unidad-3) | Paso por valor/referencia, arreglos 1D, 2D y 3D |
+| — | [Conclusiones generales](#conclusiones) | Aprendizajes integrados del curso |
+| — | [Bibliografía](#bibliografia) | Referencias por unidad |
+| — | [Uso de la IA](#uso-ia) | Declaración de transparencia |
 
-#### 3. Diseño del algoritmo
-**Pseudocódigo:**
+---
+
+<a id="unidad-1"></a>
+<details open>
+<summary><h2 style="display:inline">📘 Unidad 1 — Fundamentos de Programación</h2></summary>
+
+### Contenidos teóricos
+
+**Algoritmo**
+Serie de instrucciones lógicas, ordenadas y finitas mediante las cuales se resuelve un problema o se procesa información. Recibe una entrada (*input*), la somete a un conjunto de pasos concretos, y produce una salida (*output*) con el resultado esperado. Es la base de toda la programación: traduce la lógica humana en procesos que la computadora puede ejecutar con precisión.
+
+<img width="700" alt="Concepto de algoritmo" src="https://github.com/user-attachments/assets/be2420c8-9bfd-4d77-a244-a7d30a1401b7" />
+
+**Pseudocódigo**
+Recurso para describir un algoritmo mediante un lenguaje intermedio entre el lenguaje humano y el de programación. No es código ejecutable, sino una herramienta de diseño lógico que ayuda a estructurar un proceso sin estar sujeto a reglas sintácticas estrictas.
+
+**Diagrama de flujo**
+Representación gráfica de un algoritmo mediante figuras geométricas (óvalos para inicio/fin, rombos para decisiones, rectángulos para procesos) conectadas por flechas que indican el orden lógico de ejecución.
+
+<img width="700" alt="Diagrama de flujo" src="https://github.com/user-attachments/assets/4c3e7758-d783-477d-947a-6ea52c459cf2" />
+
+**Prueba de escritorio**
+Verificación manual de la lógica de un algoritmo antes de programarlo. Consiste en elaborar una tabla con las variables y ejecutar el pseudocódigo paso a paso, asignando valores reales para observar cómo cambian. Permite detectar bucles infinitos, errores de condición y fallos lógicos de forma anticipada.
+
+**Lenguajes de programación**
+Conjunto de reglas sintácticas y semánticas que permiten escribir instrucciones precisas para que una computadora las ejecute — el puente entre la lógica de solución de problemas y el código binario que entiende el hardware.
+
+**Programación por bloques**
+Recurso visual que permite construir programas conectando piezas gráficas que representan instrucciones lógicas, sin necesidad de escribir código textual. Al encajar los bloques se garantiza automáticamente una sintaxis correcta y un flujo coherente.
+
+<img width="700" alt="Programación por bloques" src="https://github.com/user-attachments/assets/e21c0c5b-402c-40c9-bdcf-c602b064f3b4" />
+
+---
+
+### 🧮 Ejercicio: estructura secuencial (presupuesto de pintura)
+
+**Planteamiento del problema**
+Un almacén necesita calcular el presupuesto de un trabajo de pintura, cobrando por metro cuadrado. Se debe generar un presupuesto por cliente.
+
+**Análisis del problema**
+
+| Elemento | Detalle |
+|---|---|
+| Entradas | Largo (`l`), alto (`h`) |
+| Proceso | `area <- largo * alto` <br> `totalPagar <- area * costoPorM2` |
+| Salida | Total a pagar |
+
+**Pseudocódigo**
+```text
 Algoritmo presupuesto
-		
-		// Definir variables de entrada y c?lculo
-		Definir largo, alto, area, costoPorM2, totalPagar Como Real
-		Definir nombreCliente Como Cadena
-		
-		Escribir "--- Generador de Presupuestos de Pintura ---"
-		
-		// Entrada de datos del cliente
-		Escribir "Ingrese el nombre del cliente:"
-		Leer nombreCliente
-		
-		// Entrada de medidas de la superficie
-		Escribir "Ingrese el largo de la superficie (en metros):"
-		Leer largo
-		Escribir "Ingrese el alto de la superficie (en metros):"
-		Leer alto
-		
-		// Entrada del precio unitario
-		Escribir "Ingrese el costo por metro cuadrado ($):"
-		Leer costoPorM2
-		
-		// Proceso: Calcular el ?rea y el costo total
-		area <- largo * alto
-		totalPagar <- area * costoPorM2
-	
-		// Salida de resultados (Presupuesto) //
-		Escribir "        PRESUPUESTO DE PINTURA           "
-		Escribir "Cliente: ", nombreCliente
-		Escribir "Superficie total: ", area, " m2"
-		Escribir "Precio por m2: $", costoPorM2
-		Escribir "-----------------------------------------"
-		Escribir "TOTAL A COBRAR: $", totalPagar
-		Escribir "========================================="
+
+    Definir largo, alto, area, costoPorM2, totalPagar Como Real
+    Definir nombreCliente Como Cadena
+
+    Escribir "--- Generador de Presupuestos de Pintura ---"
+
+    Escribir "Ingrese el nombre del cliente:"
+    Leer nombreCliente
+
+    Escribir "Ingrese el largo de la superficie (en metros):"
+    Leer largo
+    Escribir "Ingrese el alto de la superficie (en metros):"
+    Leer alto
+
+    Escribir "Ingrese el costo por metro cuadrado ($):"
+    Leer costoPorM2
+
+    area <- largo * alto
+    totalPagar <- area * costoPorM2
+
+    Escribir "        PRESUPUESTO DE PINTURA           "
+    Escribir "Cliente: ", nombreCliente
+    Escribir "Superficie total: ", area, " m2"
+    Escribir "Precio por m2: $", costoPorM2
+    Escribir "-----------------------------------------"
+    Escribir "TOTAL A COBRAR: $", totalPagar
+    Escribir "========================================="
 FinAlgoritmo
+```
 
-**Diagrama de flujo:**
+**Diagrama de flujo**
 
+<img width="400" alt="Diagrama de flujo del presupuesto" src="https://github.com/user-attachments/assets/67d841f5-8e95-4ac8-96fb-9f94df9c3aa4" />
 
-<img width="492" height="930" alt="image" src="https://github.com/user-attachments/assets/67d841f5-8e95-4ac8-96fb-9f94df9c3aa4" />
-
-
-**Codigo fuente  :**
+**Código fuente (C)**
+```c
 #include <stdio.h>
 
 int main() {
-    
+
     float largo, alto, area, costo, total;
     char nombre[50];
 
     printf("--- Presupuesto de Pintura ---\n");
 
-    // Entrada de datos
     printf("Nombre del cliente: ");
     scanf("%s", nombre);
 
@@ -128,456 +164,356 @@ int main() {
     printf("Costo por m2: ");
     scanf("%f", &costo);
 
-    // Cálculos
     area = largo * alto;
     total = area * costo;
 
-    // Salida de resultados
     printf("\nCliente: %s\n", nombre);
     printf("Total m2: %.2f\n", area);
     printf("TOTAL A PAGAR: $%.2f\n", total);
 
     return 0;
 }
+```
 
-**Prueva de escritorio :**
-<img width="1100" height="500" alt="prueba_escritorio_tabla" src="https://github.com/user-attachments/assets/7e226209-e40d-49a2-91ef-8b4d936ef74a" />
-<img width="743" height="236" alt="image" src="https://github.com/user-attachments/assets/d22015e1-353b-4514-8dcc-093dcfc7e921" />
+**Prueba de escritorio**
 
+<img width="700" alt="Tabla de prueba de escritorio" src="https://github.com/user-attachments/assets/7e226209-e40d-49a2-91ef-8b4d936ef74a" />
+<img width="500" alt="Prueba de escritorio - resultado" src="https://github.com/user-attachments/assets/d22015e1-353b-4514-8dcc-093dcfc7e921" />
 
-**Principales dificultades :**
+> [!WARNING]
+> **Principales dificultades**
+> - **Punteros y direcciones de memoria**: es lo que más confunde al inicio. Hay que aprender a usar `*` y `&` para indicarle a la computadora exactamente dónde guardar los datos; un mal uso provoca el clásico *segmentation fault*.
+> - **Sintaxis que no perdona**: C es muy estricto. Olvidar un `;` o escribir `=` en lugar de `==` en un `if` genera decenas de errores de compilación difíciles de interpretar.
+> - **El manejo de cadenas (strings)**: en C no se crea texto de forma directa, hay que manejar arreglos de caracteres manualmente. Concatenar o comparar palabras exige cuidar los índices y el carácter de cierre `\0`.
 
+> [!TIP]
+> **Reflexión crítica**
+> Lo más importante que aprendí es que programar no se reduce a escribir código sin más: primero hay que construir la lógica. Llevar un diagrama o un pseudocódigo hasta un lenguaje como C implica un salto considerable, sobre todo cuando entran en juego los punteros y la memoria. En cambio, una buena prueba de escritorio evita muchos dolores de cabeza frente al compilador. En definitiva, se trata de ser ordenado y entender que cada paso cuenta para que el programa no falle.
 
-Punteros y direcciones de memoria: Es lo que más marea. Tienes que aprender a usar el * y el & para decirle a la compu exactamente dónde guardar los datos, y si te equivocas, el programa explota (el famoso Segmentation Fault).
-
-Sintaxis que no perdona: C es súper especial. Si te falta un punto y coma ; o si pones = en lugar de == en un if, el compilador te lanza mil errores que a veces no se entienden nada y te vuelven loco buscando el fallo.
-
-El lío de los "Strings": En C no puedes simplemente crear un texto; tienes que manejar arreglos de caracteres a mano. Concatenar o comparar palabras es un dolor de cabeza porque tienes que cuidar los índices y el carácter de cierre \0
-
-**Reflexcion Critica  :**
-
-
-
-Lo más trascendente que aprendí es que programar no se puede reducir simplemente a tirar código por doquier, sino que hay que saber armar la lógica antes de tratar de tocar el teclado. "Llevar un diagrama o un pseudocódigo a un lenguaje como el C es un salto fuertísimo, sobre todo cuando entran en juego los punteros y la memoria". En cambio, "si haces tus pruebas de escritorio bien, te evitas mil enojos en el compilador". Al fin de cuentas, "se trata de ser ordenados, y sobre todo entender que cada paso cuenta para que el programa no truene".
+<div align="right"><a href="#top">⬆ Volver arriba</a></div>
 
 </details>
 
+---
 
-
+<a id="unidad-2"></a>
 <details>
-  <summary>📂 <b>Unidad 2: Estructuras Condicionales y Repetitivas</b></summary>
-  <br>
-  <blockquote>
-## 📘 Unidad 2: Estructuras Condicionales y Repetitivas
+<summary><h2 style="display:inline">📘 Unidad 2 — Estructuras Condicionales y Repetitivas</h2></summary>
 
-### Estructuras Condicionales.
+### Estructuras condicionales
 
-- **Condicional Simple (if):** El condicional simple if (al que en idioma español le daríamos una traducción muy literal como "si..." de condición) es la estructura de control más básica de la programación. Se utiliza para que el programa tome una decisión en función de una única condición.
-Básicamente le dice al programa: "evalúa esto. Si me devuelves 'verdadero' ejecuta esto. Si me devuelves 'falso' simplemente lo omites y continúas con lo tuyo".
-<img width="402" height="241" alt="image" src="https://github.com/user-attachments/assets/880695bc-0316-46b0-b845-dc59cff4c84a" />
+**Condicional simple (`if`)**
+La estructura de control más básica. Evalúa una condición: si es verdadera, ejecuta un bloque de instrucciones; si es falsa, simplemente lo omite y continúa.
 
-### Psudonimo
+<img width="400" alt="if simple" src="https://github.com/user-attachments/assets/880695bc-0316-46b0-b845-dc59cff4c84a" />
 
-<img width="837" height="469" alt="image" src="https://github.com/user-attachments/assets/3a9dba88-7c95-4f43-8d2a-358d6fecb1fb" />
+*Pseudocódigo:*
 
+<img width="500" alt="Pseudocódigo if" src="https://github.com/user-attachments/assets/3a9dba88-7c95-4f43-8d2a-358d6fecb1fb" />
 
+**Condicional doble (`if... else`)**
+Ofrece dos caminos posibles: ejecuta la Acción A si la condición es verdadera, o la Acción B si es falsa.
 
+<img width="700" alt="if else" src="https://github.com/user-attachments/assets/e24b0c96-93ae-4ddc-a8ae-8e2a26649e3f" />
 
-- **Condicional Doble (if else):** El condicional doble (if - else) es la estructura de control que nos da la opción de tomar una decisión entre un par de caminos posibles. A diferencia del if simple (donde solo hacíamos algo si se llegaba a dar la condición), aquí le obligamos al programa a hacer algo si la respuesta es verdadera y hacer otra cosa si es falsa.
-En español se puede traducir como: "Si se da la condición, haz la Acción A; SI NO (else), haz la Acción B".
-<img width="1024" height="614" alt="image" src="https://github.com/user-attachments/assets/e24b0c96-93ae-4ddc-a8ae-8e2a26649e3f" />
+*Pseudocódigo:*
 
-### Psudonimo
+<img width="500" alt="Pseudocódigo if else" src="https://github.com/user-attachments/assets/b0ec74da-8b62-4a53-a9ca-af3c67673c44" />
 
-<img width="841" height="527" alt="image" src="https://github.com/user-attachments/assets/b0ec74da-8b62-4a53-a9ca-af3c67673c44" />
+**Condicional múltiple (`switch`)**
+Se utiliza cuando una misma variable puede tomar distintos valores, cada uno con un camino alternativo. En lugar de encadenar múltiples `if-else if` (lo que vuelve el código largo y difícil de leer), el `switch` evalúa la variable una sola vez y salta directamente al `case` correspondiente.
 
+<img width="700" alt="switch" src="https://github.com/user-attachments/assets/1065a472-5468-426a-977a-6a8ac53d0c5d" />
 
+*Pseudocódigo:*
 
+<img width="500" alt="Pseudocódigo switch" src="https://github.com/user-attachments/assets/ad38b0d0-76bd-4de7-8f42-33ba208087e3" />
 
-- **Condicional Múltiple (switch):** El Condicional Múltiple (switch) es el tipo de control que empleamos cuando una única variable puede ser evaluada para distintos valores y hacer un camino alternativo en cada caso.Lejos de encadenar diez bloques de if- else if lo que haría que el código fuese larguísimo y superdificil de leer , el switch evalúa la variable en una sola ocasión saltando directamente al "case" que coincida con el valor dado.
- <img width="1024" height="614" alt="image" src="https://github.com/user-attachments/assets/1065a472-5468-426a-977a-6a8ac53d0c5d" />
+### Estructuras repetitivas
 
+**Ciclo mientras (`while`)**
+Estructura de **pre-condición**: verifica la condición antes de cada vuelta. Si desde el inicio la condición es falsa, el ciclo no se ejecuta ni una sola vez.
 
- ### Psudonimo
+<img width="500" alt="while" src="https://github.com/user-attachments/assets/9b49a951-8174-400f-b8b4-ebbe9768e31a" />
 
+*Pseudocódigo:*
 
-<img width="849" height="517" alt="image" src="https://github.com/user-attachments/assets/ad38b0d0-76bd-4de7-8f42-33ba208087e3" />
+<img width="500" alt="Pseudocódigo while" src="https://github.com/user-attachments/assets/cb56d359-afc5-4e45-984d-dfed7a43cab2" />
 
+**Ciclo hacer-mientras (`do-while`)**
+Estructura de **post-condición**: ejecuta el bloque de código al menos una vez y luego evalúa si debe repetirse. A diferencia del `while`, aquí primero se actúa y después se pregunta.
 
- 
+<img width="500" alt="do while" src="https://github.com/user-attachments/assets/f27770c6-34cb-4d84-8343-60e22f66a405" />
 
+*Pseudocódigo:*
 
+<img width="500" alt="Pseudocódigo do while" src="https://github.com/user-attachments/assets/3ce3e303-908b-4aa9-af8a-246accb249ef" />
 
- ### Estructuras Repetitivas
+**Ciclo para (`for`)**
+Se utiliza cuando se conoce de antemano cuántas veces debe ejecutarse un bloque de código. Reúne en una sola línea tres elementos: inicialización (`i = 0`), condición de parada (`i < 10`) e incremento/decremento (`i++`).
 
- - **Ciclo Mientras (While):** El Ciclo Mientras (While) se presenta como una estructura de control repetitiva (o también denominada bucle) que permite la ejecución de un segmento de código repetidamente siempre que una condición dada mantenga su valor verdadero.
-Dicho ciclo se denomina también como una estructura de "pre-condición" pues el programa es un poco "desconfiado", pues lo primero que debe hacer antes de cada vuelta es comprobar si la condición de para de bucle se cumple. Si desde el inicio mismo la condición resulta falsa, el programa no desarrollará el ciclo ni tan siquiera una vez, sino que lo eludirá.
-<img width="1024" height="1024" alt="image" src="https://github.com/user-attachments/assets/9b49a951-8174-400f-b8b4-ebbe9768e31a" />
+<img width="500" alt="for" src="https://github.com/user-attachments/assets/fca5e59d-8631-496d-a29b-6f0ae637846e" />
 
-### Psudonimo
+*Pseudocódigo:*
 
+<img width="500" alt="Pseudocódigo for" src="https://github.com/user-attachments/assets/78ee7ec1-6ffd-4e44-8bdb-95ba9b15f1d6" />
 
-<img width="801" height="461" alt="image" src="https://github.com/user-attachments/assets/cb56d359-afc5-4e45-984d-dfed7a43cab2" />
+---
 
+### 🧮 Ejercicio: estructuras condicional y repetitiva combinadas
 
+**Planteamiento del problema**
+Escribir un programa en C que solicite un número entre 10 y 20 (inclusive), validando la entrada hasta que sea correcta. Una vez ingresado, debe mostrarse una cuenta regresiva desde ese número hasta 0, y al final la suma total de los valores recorridos.
 
+**Análisis del problema**
 
+| Etapa | Actividad | Detalle |
+|---|---|---|
+| Entrada | Ingreso de dato | El usuario introduce un número entero |
+| Validación | Verificación del rango | Se comprueba que esté entre 10 y 20 |
+| Control de errores | Solicitud de nuevo dato | Si está fuera de rango, se muestra un error y se vuelve a pedir |
+| Procesamiento | Cuenta regresiva | Desde el número válido hasta 0, disminuyendo de uno en uno |
+| Procesamiento | Acumulación de suma | Cada valor de la cuenta regresiva se suma a un acumulador |
+| Salida | Mensaje de error | Solo si el número está fuera de rango |
+| Salida | Secuencia de números | Se imprime cada valor de la cuenta regresiva |
+| Salida | Resultado final | Suma total de los números recorridos |
 
+**Diagrama de flujo**
 
+<img width="700" alt="Diagrama de flujo ejercicio unidad 2" src="https://github.com/user-attachments/assets/7ae4cfa4-ae1b-4f1b-8e42-dd2497881a18" />
 
-- **Ciclo Hacer - Mientras (Do - While):** El proceso Hacer - Mientras (Do - While) es un tipo de control repetido que provoca la obligación en el programa de ejecutar el bloque de código en cuestión al menos una vez, y tras ello proceder a la evaluación de si ha de seguir ejecutándose o no.
-A la inversa del ciclo While (que comprueba la condición antes de entrar), el Do - While es una estructura de post-condición. En este caso, el programa es "atrevido": primero realiza la acción y a continuación pregunta.Se traduce, literalmente, por "Hacer estas operaciones y en el siguiente instante evaluar si mientras la condición sea verdadera se vuelve a ejecutar".
-<img width="1024" height="1024" alt="image" src="https://github.com/user-attachments/assets/f27770c6-34cb-4d84-8343-60e22f66a405" />
-
-
-### Psudonimo
-
-
-
-<img width="807" height="428" alt="image" src="https://github.com/user-attachments/assets/3ce3e303-908b-4aa9-af8a-246accb249ef" />
-
-
-
-
-
-
-- **Ciclo Para (For):** El ciclo Para (For) es aquella estructura de control repetitiva que empleamos cuando sabemos de antemano cuántas veces queremos que se ejecute un bloque de código, es decir, exactamente el número de veces.
-Por otro lado, a diferencia de, el While o el Do-While que se ven sometidos a una condición que podría cambiar en el transcurrir del tiempo, el ciclo For está hecho para llevar una cuenta matemática correcta. Para ello, en su estructura agrupa tres elementos importantes en una sola línea:
-La inicialización: Crea una variable "contador" (comúnmente nombrada como i) y le asigna un valor inicial (ej. i = 0).
-La condición: El límite que le dice al ciclo cuando detenerse (ej. mientras i < 10).
-El incremento/decremento: El incremento o decremento que le hacemos al contador en cada vuelta (ej. sumarle 1 a i: i++).
-<img width="1024" height="1024" alt="image" src="https://github.com/user-attachments/assets/fca5e59d-8631-496d-a29b-6f0ae637846e" />
-
-
-### Psudonimo
-
-
-<img width="798" height="464" alt="image" src="https://github.com/user-attachments/assets/78ee7ec1-6ffd-4e44-8bdb-95ba9b15f1d6" />
-
-
-
-
-## Ejercicio Practico:structura condicional y repetitiva.
-
-#### 1. Planteamiento del problema
-Escribe un programa en C que solicite al usuario ingresar un número que esté obligatoriamente en el rango de 10 a 20 (inclusive). Si el usuario ingresa un número fuera de este rango, el programa debe mostrar un error y volver a pedir el número hasta que sea válido. Una vez ingresado un número correcto, el programa debe mostrar una cuenta regresiva desde ese número hasta el 0. Finalmente, debe calcular y mostrar en pantalla la suma de todos los números que formaron parte de esa cuenta regresiva.
-
-#### 2. Análisis del problema
-| **Etapa**              | **Actividad**           | **Detalle**                                                                                                  |
-| ---------------------- | ----------------------- | ------------------------------------------------------------------------------------------------------------ |
-| **Entrada**            | Ingreso de dato         | El usuario introduce un número entero.                                                                       |
-| **Validación**         | Verificación del rango  | Se comprueba que el número esté entre 10 y 20, inclusive.                                                    |
-| **Control de errores** | Solicitud de nuevo dato | Si el número está fuera del rango permitido, se muestra un mensaje de error y se vuelve a pedir otro número. |
-| **Procesamiento**      | Cuenta regresiva        | Se realiza una cuenta regresiva desde el número válido hasta 0, disminuyendo de uno en uno.                  |
-| **Procesamiento**      | Acumulación de suma     | Cada número de la cuenta regresiva se agrega a una variable acumuladora para obtener la suma total.          |
-| **Salida**             | Mensaje de error        | Se muestra únicamente cuando el usuario ingresa un número fuera del rango permitido.                         |
-| **Salida**             | Secuencia de números    | Se imprimen todos los valores de la cuenta regresiva.                                                        |
-| **Salida**             | Resultado final         | Se muestra la suma total de los números incluidos en la cuenta regresiva.                                    |
-
-#### 3. Diagrama de flujo
-<img width="1271" height="936" alt="image" src="https://github.com/user-attachments/assets/7ae4cfa4-ae1b-4f1b-8e42-dd2497881a18" />
-
-#### 4. Codigo fuente
-
+**Código fuente (C)**
+```c
 #include <stdio.h>
+
 int main() {
-     int numero ,s=0;
+    int numero, s = 0;
 
-     do{
-        printf ("ingtrese un numero de 10 a 20\n");
-        scanf("%i",&numero);
+    do {
+        printf("Ingrese un numero de 10 a 20\n");
+        scanf("%i", &numero);
 
-        if (numero<10 || numero>20){
-            printf("numero fuera del rango permitido");
-        } 
-     } while (numero<10 || numero>20);
-     printf("el numero sera decrecido:%i\n",numero);
-     for (int a=numero;a>=0;a--){
-        printf("%i\n",a);
-        s=s+a;  
-        
-     }
-     printf("la suma es %i\n",s);
-     
+        if (numero < 10 || numero > 20) {
+            printf("Numero fuera del rango permitido\n");
+        }
+    } while (numero < 10 || numero > 20);
+
+    printf("El numero sera decrecido: %i\n", numero);
+
+    for (int a = numero; a >= 0; a--) {
+        printf("%i\n", a);
+        s = s + a;
+    }
+
+    printf("La suma es %i\n", s);
+
     return 0;
 }
+```
 
+**Prueba de escritorio**
 
-#### 5. Prueva de escritorio 
+| Iteración | Instrucción | `a` (contador) | Condición `a ≥ 0` | `s` (suma acumulada) | Pantalla |
+|---|---|---|---|---|---|
+| — | `printf("...decrecido:12");` | — | — | 0 | El numero sera decrecido: 12 |
+| 1 | `int a = numero;` | 12 | Verdadero | 12 | 12 |
+| 2 | `a--` | 11 | Verdadero | 23 | 11 |
+| 3 | `a--` | 10 | Verdadero | 33 | 10 |
+| 4 | `a--` | 9 | Verdadero | 42 | 9 |
+| 5 | `a--` | 8 | Verdadero | 50 | 8 |
+| 6 | `a--` | 7 | Verdadero | 57 | 7 |
+| 7 | `a--` | 6 | Verdadero | 63 | 6 |
+| 8 | `a--` | 5 | Verdadero | 68 | 5 |
+| 9 | `a--` | 4 | Verdadero | 72 | 4 |
+| 10 | `a--` | 3 | Verdadero | 75 | 3 |
+| 11 | `a--` | 2 | Verdadero | 77 | 2 |
+| 12 | `a--` | 1 | Verdadero | 78 | 1 |
+| 13 | `a--` | 0 | Verdadero | 78 | 0 |
+| Final | `a--` | -1 | Falso → termina `for` | 78 | — |
+| — | `printf("la suma es...");` | -1 | — | 78 | **la suma es 78** |
 
-| Iteración | Línea de código                          | **a (Contador)** | **Condición: ¿a ≥ 0?**            | **s (Suma acumulada)** | **Pantalla **                |
-| --------- | ---------------------------------------- | ---------------- | --------------------------------- | ---------------------- | ---------------------------- |
-| —         | `printf("el numero sera decrecido:12");` | —                | —                                 | 0                      | el numero sera decrecido: 12 |
-| 1         | `int a = numero;`                        | 12               | Verdadero (12 ≥ 0)                | 0 + 12 = **12**        | 12                           |
-| 2         | `a--`                                    | 11               | Verdadero (11 ≥ 0)                | 12 + 11 = **23**       | 11                           |
-| 3         | `a--`                                    | 10               | Verdadero (10 ≥ 0)                | 23 + 10 = **33**       | 10                           |
-| 4         | `a--`                                    | 9                | Verdadero (9 ≥ 0)                 | 33 + 9 = **42**        | 9                            |
-| 5         | `a--`                                    | 8                | Verdadero (8 ≥ 0)                 | 42 + 8 = **50**        | 8                            |
-| 6         | `a--`                                    | 7                | Verdadero (7 ≥ 0)                 | 50 + 7 = **57**        | 7                            |
-| 7         | `a--`                                    | 6                | Verdadero (6 ≥ 0)                 | 57 + 6 = **63**        | 6                            |
-| 8         | `a--`                                    | 5                | Verdadero (5 ≥ 0)                 | 63 + 5 = **68**        | 5                            |
-| 9         | `a--`                                    | 4                | Verdadero (4 ≥ 0)                 | 68 + 4 = **72**        | 4                            |
-| 10        | `a--`                                    | 3                | Verdadero (3 ≥ 0)                 | 72 + 3 = **75**        | 3                            |
-| 11        | `a--`                                    | 2                | Verdadero (2 ≥ 0)                 | 75 + 2 = **77**        | 2                            |
-| 12        | `a--`                                    | 1                | Verdadero (1 ≥ 0)                 | 77 + 1 = **78**        | 1                            |
-| 13        | `a--`                                    | 0                | Verdadero (0 ≥ 0)                 | 78 + 0 = **78**        | 0                            |
-| Final     | `a--`                                    | -1               | Falso (-1 ≥ 0) → termina el `for` | **78**                 | —                            |
-| —         | `printf("la suma es %i\n", s);`          | -1               | —                                 | **78**                 | **la suma es 78**            |
+<img width="500" alt="Salida del programa unidad 2" src="https://github.com/user-attachments/assets/d079fc1b-5966-4694-b9c7-258aad6ca015" />
 
+> [!WARNING]
+> **Principales dificultades**
+> - **El bucle infinito y la computadora congelada**: en `while` y `do-while` hay que recordar modificar siempre la variable de control dentro del ciclo. Si se olvida, la condición nunca se vuelve falsa y el programa corre indefinidamente.
+> - **La "caída libre" del `switch` por el `break`**: si se omite el `break` al final de un `case`, el compilador no avisa nada — simplemente continúa ejecutando los casos siguientes, generando resultados inesperados y difíciles de depurar.
+> - **Elegir el ciclo equivocado (`while` vs `do-while`)**: usar un `while` en una validación de menú puede hacer que el programa nunca entre si la condición falla desde el inicio; usar un `do-while` donde no corresponde ejecuta código no deseado al menos una vez.
+> - **El desfase por uno (*off-by-one error*) en el `for`**: es fácil equivocarse en el límite (usar `<=` en lugar de `<`), lo que provoca una vuelta de más o de menos, especialmente problemático al trabajar con posiciones exactas.
 
+> [!TIP]
+> **Reflexión crítica**
+> Aprender estas estructuras confirma que programar exige construir la lógica antes de escribir código. Llevar un diagrama de flujo o un pseudocódigo hacia condicionales y ciclos anidados implica un salto importante, sobre todo cuando un `if` queda dentro de un `for` y la lógica empieza a complicarse. Elaborar bien los diagramas de flujo y ejecutar pruebas de escritorio a mano —evaluando qué ocurre si la condición es verdadera o falsa— evita muchos errores de ejecución. Al final, se trata de ser ordenado, elegir la estructura que el problema realmente necesita, y entender que cada decisión o repetición cuenta para que el programa no falle.
 
-
-<img width="695" height="435" alt="image" src="https://github.com/user-attachments/assets/d079fc1b-5966-4694-b9c7-258aad6ca015" />
-
-
-#### Principales dificultades
-
-El bucle infinito y la computadora congelada: Es lo que más marea en las estructuras repetitivas. En el while y el do-while tienes que acordarte sí o sí de modificar la variable de control adentro del ciclo (el famoso contador o acumulador). Si te descuidas y lo olvidas, la condición nunca se vuelve falsa y el programa se queda corriendo para siempre hasta que te explota la memoria o se te tilda la computadora.
-
-El "caída libre" del switch por culpa del break: El switch se ve súper limpio, pero es traicionero. Si te olvidas de poner la palabra break al final de un caso, el compilador no te avisa nada; simplemente se pasa de largo y te ejecuta las instrucciones de los casos de abajo como si fueran parte del mismo. Te vuelves loco buscando por qué te salen tres respuestas al mismo tiempo.
-
-Elegir el ciclo equivocado (while vs do-while): Confundir cuándo usar cuál es un dolor de cabeza. Si pones un while en una validación de menú, a veces el programa ni entra porque la condición falló desde el inicio. Y si pones un do-while donde no debías, te ejecuta un código intruso al menos una vez antes de darse cuenta de que la condición era falsa, rompiendo toda la lógica.
-
-El desfase por uno (Off-by-one error) en el for: En el ciclo for manejas tres cosas en una sola línea (inicio, límite y paso). Es facilísimo equivocarse en el límite y poner un <= en lugar de <. Al final, el ciclo te da una vuelta de más o una de menos, y cuando trabajas con posiciones exactas, el programa truena.
-
-#### Reflexion critica 
-
-Lo más trascendente de aprender estas estructuras es entender que programar no se puede reducir simplemente a tirar código por doquier, sino que hay que saber armar la lógica antes de tratar de tocar el teclado. Llevar un diagrama de flujo o un pseudocódigo a las condicionales y ciclos es un salto fuertísimo, sobre todo cuando empiezas a anidar un if dentro de un for y todo se empieza a enredar como un espagueti.
-
-En cambio, si haces tus diagramas de flujo bien y tiras tus pruebas de escritorio a mano (evaluando qué pasa si la condición da verdadero o falso), te evitas mil enojos con el programa corriendo mal. Al fin de cuentas, se trata de ser ordenados, entender que no hay que usar la estructura que mejor te caiga sino la que el problema necesita, y saber que cada decisión o cada vuelta cuenta para que el programa no se rompa.
-
-
+<div align="right"><a href="#top">⬆ Volver arriba</a></div>
 
 </details>
 
- 
+---
 
- 
-
-
+<a id="unidad-3"></a>
 <details>
-  <summary>📂 <b>Unidad 3:Modularidad Y Arreglos </b></summary>
-  <br>
-  <blockquote>
+<summary><h2 style="display:inline">📘 Unidad 3 — Modularidad y Arreglos</h2></summary>
 
+### Modularidad
 
-## unidad 3 Modularidad Y Arreglos
+La **modularidad** es un paradigma de diseño de software que consiste en descomponer un sistema complejo en unidades funcionales discretas y autónomas, llamadas **módulos**. Estas unidades deben cumplir dos criterios de diseño fundamentales:
 
-### Modularidad :
-La **modularidad** es un paradigma de diseño de software que fundamenta la descomposición de un sistema complejo en unidades funcionales discretas y autónomas, denominadas **módulos**. Estas unidades deben cumplir con dos criterios de diseño fundamentales:
+- **Alta cohesión**: cada módulo contiene únicamente los elementos lógicos y funcionales necesarios para una tarea específica, manteniéndose enfocado.
+- **Bajo acoplamiento**: los módulos mantienen una interdependencia mínima entre sí, comunicándose mediante interfaces bien definidas y estables.
 
-* **Alta cohesión:** Cada módulo debe contener únicamente los elementos lógicos y funcionales necesarios para realizar una tarea específica, garantizando que el componente esté altamente enfocado.
-* **Bajo acoplamiento:** Los módulos deben presentar una interdependencia mínima entre sí, comunicándose a través de interfaces bien definidas y estables.
+Esta estructura permite la **encapsulación de la lógica**, facilita el desarrollo paralelo, la reutilización de componentes y una gestión de errores más granular. En ingeniería de software, la modularidad es el pilar que permite la escalabilidad y la mantenibilidad a largo plazo, ya que posibilita modificar secciones aisladas del código sin comprometer la integridad del programa completo.
 
-Esta estructura permite la **encapsulación de la lógica**, lo que facilita el desarrollo paralelo, la reutilización de componentes y una gestión de errores más granular. En el contexto de la ingeniería de software, la modularidad es el pilar que permite la escalabilidad del sistema y la mantenibilidad a largo plazo, ya que permite modificar o actualizar secciones aisladas del código sin comprometer la integridad estructural del programa completo.
+**Ventajas**
 
-### Ventajas:
- * **Facilidad de Mantenimiento y Depuración**: Al estar el código fragmentado en módulos, el aislamiento de errores se vuelve mucho más sencillo. Si surge un fallo, es posible localizarlo y corregirlo dentro de un módulo específico sin tener que realizar cambios profundos en el sistema central o afectar áreas no relacionadas.
+| Ventaja | Descripción |
+|---|---|
+| Facilidad de mantenimiento y depuración | Un fallo puede aislarse y corregirse dentro de un módulo específico sin alterar el sistema completo |
+| Reutilización de código | Los módulos funcionan como piezas independientes que pueden reutilizarse en otros proyectos |
+| Desarrollo paralelo | Distintos desarrolladores pueden trabajar en módulos diferentes de forma simultánea |
+| Legibilidad y comprensión | Reduce la carga cognitiva al permitir enfocarse en un componente a la vez |
+| Escalabilidad y flexibilidad | Nuevas funcionalidades se agregan como módulos adicionales, sin romper lo existente |
+| Mejora en las pruebas (*testing*) | Permite realizar pruebas unitarias sobre módulos independientes antes de integrarlos |
 
-* **Reutilización de Código**: Los módulos bien diseñados funcionan como componentes independientes (como "piezas de Lego"). Esto permite que, una vez que una funcionalidad ha sido implementada y probada, pueda ser reutilizada en otros proyectos o en diferentes secciones del mismo programa, evitando la duplicidad de esfuerzos.
+### Tipos de paso de parámetros
 
-* **Desarrollo Paralelo**: En equipos de trabajo, la modularidad permite que diferentes desarrolladores trabajen en módulos distintos simultáneamente. Como la comunicación entre módulos se realiza a través de interfaces estandarizadas, el avance de un integrante no depende necesariamente de la finalización del trabajo de otro.
+**Paso por valor**
+Se crea una copia del valor del argumento y se asigna a la variable local de la función.
 
-* **Legibilidad y Comprensión**: Un sistema modular es mucho más fácil de entender para nuevos integrantes o para el mismo autor después de un tiempo. Reduce la carga cognitiva, ya que permite al programador enfocarse en la lógica específica de un solo componente en lugar de intentar procesar todo el sistema de una sola vez.
+- **Comportamiento**: los cambios dentro de la función no afectan a la variable original.
+- **Uso**: método por defecto en C para tipos primitivos (`int`, `float`, `char`).
+- **Ventaja**: seguridad — los datos originales quedan protegidos de efectos secundarios.
+- **Desventaja**: puede ser ineficiente con estructuras de gran tamaño, por el costo de copiar los datos.
 
-* **Escalabilidad y Flexibilidad**: La modularidad permite extender las funcionalidades de un software de manera controlada. Si necesitas agregar una nueva característica, puedes desarrollar un nuevo módulo e integrarlo al sistema existente, lo que minimiza el riesgo de que la nueva implementación rompa la estructura funcional anterior.
+<img width="700" alt="Paso por valor" src="https://github.com/user-attachments/assets/1989aa8c-b9d3-4d53-9f34-00589da03351" />
 
-* **Mejora en las Pruebas (Testing)**: Es mucho más eficiente realizar pruebas unitarias sobre módulos independientes. Esto garantiza que cada pequeño componente funcione según lo previsto de forma aislada antes de integrarse al conjunto, asegurando una mayor robustez global.
+**Paso por referencia**
+En lugar del valor, se pasa la dirección de memoria donde reside el dato.
 
-### Tipos de pases de parametros:
+- **Comportamiento**: la función opera directamente sobre la ubicación de memoria del argumento original, por lo que los cambios sí persisten.
+- **Uso**: se implementa mediante punteros — se pasa `&variable` y se recibe en un puntero `*ptr`.
+- **Ventaja**: alta eficiencia, sin necesidad de copiar datos voluminosos; permite que una función "devuelva" varios valores modificando sus parámetros.
+- **Desventaja**: mayor riesgo de efectos secundarios inesperados si la lógica no está bien controlada.
 
-#### Paso por valor:
-En este método, se crea una copia del valor del argumento original y se le asigna a la variable local de la función llamada.
+<img width="700" alt="Paso por referencia" src="https://github.com/user-attachments/assets/9945344e-5d00-40f0-a2fb-94a1f9550842" />
 
-* Comportamiento: Cualquier modificación que la función realice sobre el parámetro no afecta a la variable original en el ámbito de la función que la llamó.
+**Tabla comparativa**
 
-* Uso: Es el método por defecto en lenguajes como C para tipos de datos primitivos (int, float, char).
+| Característica | Paso por valor | Paso por referencia |
+|---|---|---|
+| ¿Qué se envía? | Una copia del dato | La dirección de memoria |
+| Efecto en el original | No hay cambios | Los cambios persisten |
+| Memoria | Consume espacio adicional (copia) | Ahorra memoria |
+| Velocidad | Más lenta con datos grandes | Más rápida |
+| Seguridad | Mayor protección de datos | Menor protección (efectos secundarios) |
 
-* Ventaja: Seguridad, ya que los datos originales están protegidos contra efectos secundarios no deseados.
+### Arreglos
 
-* Desventaja: Puede ser ineficiente si los datos son estructuras de gran tamaño, debido al consumo de memoria y tiempo requerido para realizar la copia.
+En ingeniería de software, un **arreglo** (o *array*) es una estructura de datos estática que organiza una colección finita de elementos de tipo homogéneo en posiciones de memoria contiguas. Esta combinación de contigüidad y homogeneidad es lo que permite el acceso directo a cualquier elemento sin recorrer la estructura.
 
-### Ejemplo:
-<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/1989aa8c-b9d3-4d53-9f34-00589da03351" />
+- **Tipado homogéneo**: todos los elementos comparten el mismo tipo de dato y ocupan un número fijo de bytes, lo que permite al compilador reservar un bloque de memoria regular y predecible.
+- **Adyacencia en memoria**: al ubicarse de forma secuencial, el sistema calcula la dirección de cualquier elemento con una fórmula aritmética simple:
 
-
-#### Paso por referencia:
-En lugar de pasar el valor del dato, se pasa la dirección de memoria (o una referencia) donde reside dicho dato.
-
-* Comportamiento: La función llamada opera directamente sobre la ubicación de memoria del argumento original. Por lo tanto, cualquier cambio realizado dentro de la función sí afecta a la variable original.
-
-* Uso : Se implementa mediante el uso de punteros. Pasas la dirección (&variable) y la función la recibe en un puntero (*ptr).
-
-* Ventaja: Alta eficiencia, ya que no es necesario copiar datos voluminosos. Además, permite que una función devuelva múltiples valores modificando los parámetros recibidos.
-
-* Desventaja: Mayor riesgo de errores (efectos secundarios inesperados) si la lógica no está bien controlada, ya que la integridad de los datos originales puede verse comprometida.
-
-### Ejemplo:
-<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/9945344e-5d00-40f0-a2fb-94a1f9550842" />
-
-
-### Tabla Comparativa:
-
-| **Característica**    | **Paso por Valor**                 | **Paso por Referencia**                 |
-| --------------------- | ---------------------------------- | --------------------------------------- |
-| ¿Qué se envía?        | Una copia del dato.                | La dirección de memoria.                |
-| Efecto en el original | No hay cambios.                    | Los cambios persisten.                  |
-| Memoria               | Consume espacio adicional (copia). | Ahorra memoria.                         |
-| Velocidad             | Más lento con datos grandes.       | Más rápido.                             |
-| Seguridad             | Mayor protección de datos.         | Menor protección (efectos secundarios). |
-
-### Arreglos:
-En el ámbito de la ingeniería de software, un arreglo (o array) es una estructura de datos estática que organiza una colección finita de elementos de tipo homogéneo en posiciones de memoria contiguas. Esta combinación de contigüidad y homogeneidad es lo que le permite ofrecer acceso directo a cualquier elemento sin necesidad de recorrer la estructura.
-Desde una perspectiva técnica, se define por las siguientes características:
-
-* **Tipado homogéneo**: todos los elementos comparten el mismo tipo de dato y, por lo tanto, ocupan un número fijo y conocido de bytes. Esta uniformidad es la que permite al compilador reservar un bloque de memoria regular y predecible, y es la condición necesaria para que el direccionamiento aritmético (ver punto siguiente) sea posible.
-* **Adyacencia en memoria**: al ubicarse de forma secuencial dentro del bloque asignado, el sistema puede calcular la dirección física de cualquier elemento mediante una
-* **fórmula aritmética simple**:
 $$\text{Dirección del elemento} = \text{Dirección base} + (\text{índice} \times \text{tamaño del tipo de dato})$$
-Por ejemplo, en un arreglo de enteros (int, 4 bytes) cuya dirección base es 1000, el elemento en el índice 3 se ubica en 1000 + (3 × 4) = 1012, sin necesidad de inspeccionar los elementos anteriores.
-* **Acceso aleatorio en tiempo constante**: gracias a la fórmula anterior, cualquier posición es alcanzable en tiempo O(1)O(1)
-O(1), independientemente del tamaño del arreglo o de la posición solicitada.
-* **Tamaño fijo (estático)**: en su forma básica en lenguaje C, el tamaño del arreglo debe definirse en tiempo de compilación, por lo que la memoria reservada permanece inmutable durante la ejecución. Esta restricción es precisamente lo que hace posible el rendimiento superior descrito arriba: al no poder crecer ni reubicarse, el compilador puede garantizar contigüidad y direccionamiento constante. La contrapartida es una menor flexibilidad frente a estructuras dinámicas como las listas enlazadas.
 
-### Ventajas:
+  Por ejemplo, en un arreglo de enteros (4 bytes) con dirección base 1000, el elemento en el índice 3 se ubica en `1000 + (3 × 4) = 1012`, sin inspeccionar los elementos anteriores.
+- **Acceso aleatorio en tiempo constante**: cualquier posición es alcanzable en tiempo $O(1)$, sin importar el tamaño del arreglo.
+- **Tamaño fijo (estático)**: en C, el tamaño debe definirse en tiempo de compilación, por lo que la memoria reservada es inmutable durante la ejecución. Esta restricción es justamente lo que permite el rendimiento superior descrito arriba, a costa de menor flexibilidad frente a estructuras dinámicas como las listas enlazadas.
 
-* **Acceso directo (Tiempo constante $O(1)$)**: Gracias a su disposición contigua en memoria, puedes acceder a cualquier elemento de forma inmediata si conoces su índice. No necesitas recorrer los elementos anteriores, a diferencia de lo que ocurre en una lista enlazada.
+**Ventajas**
 
-* **Eficiencia en el uso de memoria**: Al no requerir punteros adicionales por cada elemento (como ocurre en estructuras dinámicas como las listas enlazadas), los arreglos tienen una sobrecarga de memoria mínima; solo ocupan el espacio estricto de los datos almacenados.
-* **Gestión predecible**: Al ser estructuras de tamaño fijo definido en tiempo de compilación, el compilador puede calcular exactamente cuánta memoria necesita, lo que mejora el rendimiento y facilita la optimización del código.
-* **Cache Friendly (Localidad de referencia)**: Debido a que los elementos están ubicados uno al lado del otro en la memoria, los procesadores pueden aprovechar el caché de la CPU de manera muy eficiente. Al cargar un elemento, es muy probable que los siguientes ya estén en el caché, lo que acelera drásticamente las operaciones de lectura.
-* **Simplicidad en la manipulación**: Proporcionan una sintaxis intuitiva y directa para tareas comunes, como el recorrido mediante bucles (for) y la ordenación de datos, lo que los convierte en la herramienta base para implementar algoritmos fundamentales.
+- **Acceso directo — $O(1)$**: cualquier elemento es accesible de forma inmediata conociendo su índice.
+- **Eficiencia en el uso de memoria**: sin punteros adicionales por elemento, la sobrecarga de memoria es mínima.
+- **Gestión predecible**: al tener tamaño fijo, el compilador calcula exactamente cuánta memoria reservar.
+- ***Cache friendly* (localidad de referencia)**: al estar contiguos en memoria, el procesador aprovecha mejor el caché de la CPU.
+- **Simplicidad de manipulación**: sintaxis intuitiva para recorrer (`for`) y ordenar datos.
 
-### Tipos de arreglos:
+### Tipos de arreglos
 
-#### Arreglos Unidimensionales (Vectores):
-Se comportan como una secuencia lineal de elementos. Es la estructura más básica para representar conjuntos de datos donde el orden importa pero no existe una relación jerárquica compleja.
+**Arreglos unidimensionales (vectores)**
+Se comportan como una secuencia lineal de elementos — como una lista de compras o una serie de temperaturas registradas en una hora. Solo se necesita una coordenada (el índice) para identificar un valor. El compilador reserva un bloque contiguo de tamaño `N * sizeof(tipo)`, y acceder al elemento `i` implica saltar `i` posiciones desde la dirección base.
 
-* Lógica: Imagina una lista de la compra o una serie de mediciones de temperatura tomadas a lo largo de una hora. Solo necesitas una coordenada (el índice) para identificar un valor.
+<img width="600" alt="Arreglo unidimensional" src="https://github.com/user-attachments/assets/0bb47d9d-19de-4eb8-afe5-7f8116c8f729" />
 
-* Técnica: En memoria, el compilador reserva un bloque contiguo de tamaño N * sizeof(tipo_de_dato). Para acceder al elemento en la posición i, el procesador simplemente salta i posiciones desde la dirección base.
+**Arreglos bidimensionales (matrices)**
+Se estructuran como una tabla de dos dimensiones. Aunque en la memoria física los datos se almacenan de forma lineal, el lenguaje los mapea lógicamente en filas y columnas — ideal para hojas de cálculo, imágenes en escala de grises o un tablero de ajedrez. Se organizan en formato *row-major order* (primero una fila completa, luego la siguiente): para acceder a `matriz[i][j]`, el compilador calcula `Dirección_base + (i * número_de_columnas + j) * tamaño_dato`.
 
-### Ejemplo:
-<img width="1200" height="1524" alt="arreglo_unidimensional" src="https://github.com/user-attachments/assets/0bb47d9d-19de-4eb8-afe5-7f8116c8f729" />
+<img width="700" alt="Arreglo bidimensional" src="https://github.com/user-attachments/assets/f9d52de5-bf6d-4f6f-95eb-b338b089c059" />
 
+**Arreglos multidimensionales (3D o superior)**
+Añaden profundidad a la matriz: si un arreglo 2D es una "página" de datos, uno 3D es un "libro" completo de páginas. Se utilizan para representar datos más complejos, como imágenes a color RGB (ancho, alto y canal de color) o simulaciones físicas tridimensionales. La complejidad de direccionamiento aumenta, y el tamaño total del arreglo crece de forma multiplicativa según sus dimensiones ($N_1 \times N_2 \times N_3 \dots$).
 
-#### Arreglos Bidimensionales (Matrices)
-Se estructuran como una tabla de dos dimensiones. Aunque en la memoria física (RAM) los datos se almacenan de forma lineal, el lenguaje de programación los mapea lógicamente en filas y columnas.
+<img width="600" alt="Arreglo tridimensional" src="https://github.com/user-attachments/assets/2bcc7cf2-cbf9-4c8f-a5b9-533a16f4cc06" />
 
-* Lógica: Ideal para representar datos tabulares, como las celdas de una hoja de cálculo, los píxeles de una imagen en escala de grises o los movimientos en un tablero de ajedrez.
+> [!WARNING]
+> **Principales dificultades en la aplicación de los contenidos**
+> Durante el desarrollo de este trabajo sobre modularidad y arreglos, el mayor obstáculo fue asimilar la distinción real entre pasar un parámetro por valor y pasarlo por referencia. En un primer momento no lograba explicarme por qué, si en apariencia ambos mecanismos "entregaban" el mismo dato a la función, solo uno de ellos terminaba modificando la variable original. Fue necesario ejecutar distintos casos y seguir su comportamiento línea por línea para notar que todo dependía de qué se estaba enviando en realidad: una copia del contenido o la dirección donde ese contenido vive en memoria. A partir de ese momento entendí con más sentido por qué, cuando se busca que una función altere directamente la variable original, resulta indispensable recurrir al operador `&`.
+>
+> Respecto a los arreglos, no fueron los de una sola dimensión los que representaron un reto, dado que su comportamiento resulta casi natural de entender (una simple secuencia de valores localizables mediante un índice). El verdadero desafío apareció con las matrices y, más adelante, con las estructuras de tres dimensiones. Al operar con arreglos bidimensionales tuve que ensayar repetidamente con bucles anidados, ya que en un principio no tenía claro el orden correcto para recorrer filas y columnas, lo que me llevaba a dejar espacios sin asignar valor o a consultar posiciones equivocadas. Ese nivel de dificultad se incrementó al incorporar una tercera dimensión, pues ahí ya no bastaba con pensar en una tabla: había que representarse mentalmente varios planos o capas superpuestas, una imagen bastante más difícil de construir que la de un vector simple o una matriz plana.
 
-* Técnica: Se organizan usualmente en formato Row-Major Order (primero una fila completa, luego la siguiente). Para acceder a matriz[i][j], el compilador realiza una operación aritmética: Dirección_base + (i * número_de_columnas + j) * tamaño_dato.
- 
-### Ejemplo:
+> [!TIP]
+> **Reflexión crítica**
+> La modularidad y los arreglos son contenidos que se entrelazan de forma constante en la práctica real de programar, dado que resulta habitual que las funciones reciban arreglos como parte de sus parámetros. En ese contexto, dominar la diferencia entre el paso por valor y por referencia deja de ser un simple detalle teórico, porque transferir un arreglo completo por valor implicaría un gasto de memoria innecesario y poco eficiente. La posibilidad de poner en práctica estos ejercicios durante las clases demostró que conocer la teoría no basta por sí sola: hace falta programar, equivocarse y corregir el rumbo para llegar a comprender de verdad cómo se comportan los parámetros y de qué manera se recorren los distintos tipos de arreglos. En síntesis, fue la práctica sostenida la que marcó la diferencia entre memorizar conceptos de forma superficial y realmente apropiarse de ellos.
 
-<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/f9d52de5-bf6d-4f6f-95eb-b338b089c059" />
-
-
-
-#### Arreglos Multidimensionales (3D o superior)
-Son estructuras que añaden profundidad a la matriz. Mientras un arreglo 2D es una "página" de datos, un arreglo 3D es un "libro" (un conjunto de páginas).
-* Lógica: Se utilizan para representar datos de mayor complejidad. Un ejemplo clásico es el procesamiento de imágenes a color (RGB), donde la primera dimensión es el ancho, la segunda el alto y la tercera los canales de color (Rojo, Verde, Azul). También son comunes en simulaciones físicas o modelos matemáticos tridimensionales.
-* Técnica: La complejidad de direccionamiento aumenta. El compilador calcula la dirección basándose en el producto de las dimensiones anteriores. A mayor dimensión, más cuidado debe tener el programador con el consumo de memoria, ya que el tamaño total del arreglo crece de forma exponencial ($N_1 \times N_2 \times N_3 \dots$).
-
-### Ejemplo:
-
-<img width="1200" height="1804" alt="arreglo_tridimensional (1)" src="https://github.com/user-attachments/assets/2bcc7cf2-cbf9-4c8f-a5b9-533a16f4cc06" />
-
-### Principales dificultades en la aplicación de los contenidos
-* Durante el desarrollo de este trabajo sobre modularidad y arreglos, el mayor obstáculo fue asimilar la distinción real entre pasar un parámetro por valor y pasarlo por referencia. En un primer momento no lograba explicarme por qué, si en apariencia ambos mecanismos "entregaban" el mismo dato a la función, solo uno de ellos terminaba modificando la variable original. Fue necesario ejecutar distintos casos y seguir su comportamiento línea por línea para notar que todo dependía de qué se estaba enviando en realidad: una copia del contenido o la dirección donde ese contenido vive en memoria. A partir de ese momento entendí con más sentido por qué, cuando se busca que una función altere directamente la variable original, resulta indispensable recurrir al operador &.
-
-* Respecto a los arreglos, no fueron los de una sola dimensión los que representaron un reto, dado que su comportamiento resulta casi natural de entender (una simple secuencia de valores localizables mediante un índice). El verdadero desafío apareció con las matrices y, más adelante, con las estructuras de tres dimensiones. Al operar con arreglos bidimensionales tuve que ensayar repetidamente con bucles anidados, ya que en un principio no tenía claro el orden correcto para recorrer filas y columnas, lo que me llevaba a dejar espacios sin asignar valor o a consultar posiciones equivocadas. Ese nivel de dificultad se incrementó al incorporar una tercera dimensión, pues ahí ya no bastaba con pensar en una tabla: había que representarse mentalmente varios planos o capas superpuestas, una imagen bastante más difícil de construir que la de un vector simple o una matriz plana.
-
-### Reflexión crítica
-A modo de análisis crítico, pienso que la modularidad y los arreglos son contenidos que se entrelazan de forma constante en la práctica real de programar, dado que resulta habitual que las funciones reciban arreglos como parte de sus parámetros. En ese contexto, dominar la diferencia entre el paso por valor y por referencia deja de ser un simple detalle teórico, porque transferir un arreglo completo por valor implicaría un gasto de memoria innecesario y poco eficiente. La posibilidad de poner en práctica estos ejercicios durante las clases me demostró que conocer la teoría no basta por sí sola: hace falta programar, equivocarse y corregir el rumbo para llegar a comprender de verdad cómo se comportan los parámetros y de qué manera se recorren los diferentes tipos de arreglos. En síntesis, fue justamente esa práctica sostenida la que hizo la diferencia entre memorizar conceptos de forma superficial y realmente apropiarse de ellos.
-
-
-
-
-
-
-
-
+<div align="right"><a href="#top">⬆ Volver arriba</a></div>
 
 </details>
 
+---
 
-
-
+<a id="conclusiones"></a>
 <details>
-  <summary>📂 <b>Concluciones:</b></summary>
-  <br>
-  <blockquote>
+<summary><h2 style="display:inline">🧭 Conclusiones generales</h2></summary>
 
-* Uno de los primeros aprendizajes que until este proceso me dejó fue la importancia de analizar el problema antes de sentarme a programar. Apoyarme en pseudocódigo y en diagramas de flujo me permitió entender con claridad qué se esperaba resolver antes de escribir una sola línea de código, y la prueba de escritorio se convirtió en una especie de control de calidad previo: gracias a ella pude confirmar que mi razonamiento era correcto y detectar fallos antes de llegar a la versión final del programa.
-* A partir de esa base, comencé a trabajar con las estructuras secuenciales, lo que me permitió visualizar con claridad el orden en que la computadora ejecuta cada instrucción, una detrás de otra. Pasar de trabajar con bloques visuales a escribir código directamente me resultó bastante natural, y eso facilitó acostumbrarme rápido a la sintaxis y resolver sin mayor problema los ejercicios propuestos en clase.
-* El siguiente paso fue comprender las estructuras condicionales, la pieza clave que le da a un programa la capacidad de decidir entre distintos caminos —ya sea de forma simple, doble o múltiple— según se cumpla o no determinada condición, haciendo que el algoritmo reaccione de manera distinta dependiendo de los datos que reciba. Sobre esa base avancé hacia las estructuras repetitivas, es decir los bucles o ciclos, que permiten reducir considerablemente el tamaño y la complejidad de un programa al repetir automáticamente un mismo conjunto de instrucciones sin necesidad de escribirlas una y otra vez de forma manual. Al recorrer el proceso completo —desde el diseño inicial hasta la validación mediante prueba de escritorio— en ejercicios que combinaban condicionales con ciclos, logré construir un razonamiento más sólido y verificar, antes de programar, que la estructura de control del algoritmo estuviera libre de bucles sin fin o de errores de lógica.
-* Con esas bases de control de flujo ya asentadas, pude avanzar hacia dos contenidos que resultaron fundamentales para organizar programas más grandes: la modularidad y los arreglos. Reconocí que dividir un programa en módulos o funciones aporta mucho más que orden visual: permite aislar responsabilidades, de modo que cada parte del código se pueda probar, corregir o reutilizar sin necesidad de revisar el programa completo, lo cual facilitó enormemente resolver ejercicios de clase al dividir un problema grande en tareas más manejables. De manera paralela, entendí que los arreglos son una herramienta esencial cuando se necesita manejar varios datos relacionados bajo un mismo nombre, en lugar de crear una variable distinta para cada valor; trabajar con ellos me mostró cómo acceder a la información mediante índices y cómo recorrerla con ciclos, lo que terminó siendo la base para representar desde simples listas hasta estructuras más complejas como matrices o tablas de datos.
+> [!IMPORTANT]
+> Uno de los primeros aprendizajes que este proceso me dejó fue la importancia de analizar el problema antes de sentarme a programar. Apoyarme en pseudocódigo y en diagramas de flujo me permitió entender con claridad qué se esperaba resolver antes de escribir una sola línea de código, y la prueba de escritorio se convirtió en una especie de control de calidad previo: gracias a ella pude confirmar que mi razonamiento era correcto y detectar fallos antes de llegar a la versión final del programa.
 
+A partir de esa base, comencé a trabajar con las **estructuras secuenciales**, lo que me permitió visualizar con claridad el orden en que la computadora ejecuta cada instrucción, una detrás de otra. Pasar de trabajar con bloques visuales a escribir código directamente me resultó bastante natural, y eso facilitó acostumbrarme rápido a la sintaxis y resolver sin mayor problema los ejercicios propuestos en clase.
 
+El siguiente paso fue comprender las **estructuras condicionales**, la pieza clave que le da a un programa la capacidad de decidir entre distintos caminos —de forma simple, doble o múltiple— según se cumpla o no determinada condición. Sobre esa base avancé hacia las **estructuras repetitivas**, es decir los bucles o ciclos, que reducen considerablemente el tamaño y la complejidad de un programa al repetir automáticamente un mismo conjunto de instrucciones. Al recorrer el proceso completo —desde el diseño inicial hasta la validación mediante prueba de escritorio— en ejercicios que combinaban condicionales con ciclos, logré construir un razonamiento más sólido antes de programar.
 
+Con esas bases de control de flujo ya asentadas, avancé hacia dos contenidos fundamentales para organizar programas más grandes: la **modularidad** y los **arreglos**. Reconocí que dividir un programa en módulos o funciones aporta mucho más que orden visual: permite aislar responsabilidades, de modo que cada parte del código se pueda probar, corregir o reutilizar sin revisar el programa completo. De manera paralela, entendí que los arreglos son una herramienta esencial para manejar varios datos relacionados bajo un mismo nombre, accediendo a la información mediante índices y recorriéndola con ciclos — la base para representar desde listas simples hasta estructuras más complejas como matrices o tablas de datos.
 
-
+<div align="right"><a href="#top">⬆ Volver arriba</a></div>
 
 </details>
 
+---
 
-
-
-
-
+<a id="bibliografia"></a>
 <details>
-  <summary>📂 <b>Bibliografia:</b></summary>
-  <br>
-  <blockquote>
+<summary><h2 style="display:inline">📚 Bibliografía</h2></summary>
 
-	  
-#### Unidad1
-[1] O. Cairó Battistutti, Metodología de la programación: Algoritmos, diagramas de flujo y programas, 3.ª ed. México, D.F.: Alfaomega, 2005.
+**Unidad 1**
+1. O. Cairó Battistutti, *Metodología de la programación: Algoritmos, diagramas de flujo y programas*, 3.ª ed. México, D.F.: Alfaomega, 2005.
+2. L. Joyanes Aguilar, *Fundamentos de programación: Algoritmos, estructura de datos y objetos*, 4.ª ed. Madrid: McGraw-Hill, 2008.
+3. J. G. Brookshear, *Introducción a la computación*, 11.ª ed. Madrid: Pearson Educación, 2012.
+4. M. Resnick, *Cultivar la creatividad: El aprendizaje a través de proyectos, la pasión, los compañeros y el juego*. Programamos, 2019.
 
-[2] L. Joyanes Aguilar, Fundamentos de programación: Algoritmos, estructura de datos y objetos, 4.ª ed. Madrid: McGraw-Hill, 2008.
+**Unidad 2**
+5. L. Joyanes Aguilar, *Fundamentos de programación: Algoritmos, estructura de datos y objetos*, 4.ª ed. Madrid: McGraw-Hill, 2008.
+6. O. Cairó Battistutti, *Metodología de la programación: Algoritmos, diagramas de flujo y programas*, 3.ª ed. México, D.F.: Alfaomega, 2005.
+7. S. McConnell, *Code Complete: A Practical Handbook of Software Construction*, 2.ª ed. Redmond, WA: Microsoft Press, 2004.
 
-[3] J. G. Brookshear, Introducción a la computación, 11.ª ed. Madrid: Pearson Educación, 2012.
+**Unidad 3**
+1. B. W. Kernighan y D. M. Ritchie, *The C Programming Language*, 2.ª ed. Englewood Cliffs, NJ, EE. UU.: Prentice Hall, 1988.
+2. P. J. Deitel y H. M. Deitel, *C: How to Program*, 8.ª ed. Hoboken, NJ, EE. UU.: Pearson, 2016.
+3. R. Sedgewick y K. Wayne, *Algorithms*, 4.ª ed. Boston, MA, EE. UU.: Addison-Wesley Professional, 2011.
+4. S. G. Kochan, *Programming in C*, 4.ª ed. Upper Saddle River, NJ, EE. UU.: Addison-Wesley, 2015.
 
-[4] M. Resnick, Cultivar la creatividad: El aprendizaje a través de proyectos, la pasión, los compañeros y el juego. Programamos, 2019.
+<div align="right"><a href="#top">⬆ Volver arriba</a></div>
 
-#### Unidad2
-[5] L. Joyanes Aguilar, Fundamentos de programación: Algoritmos, estructura de datos y objetos, 4.ª ed. Madrid: McGraw-Hill, 2008.
+</details>
 
-[6] O. Cairó Battistutti, Metodología de la programación: Algoritmos, diagramas de flujo y programas, 3.ª ed. México, D.F.: Alfaomega, 2005.
+---
 
-[7] S. McConnell, Code Complete: A Practical Handbook of Software Construction, 2.ª ed. Redmond, WA: Microsoft Press, 2004.
-
-#### Unidad3
-
-[1] B. W. Kernighan y D. M. Ritchie, The C Programming Language, 2.ª ed. Englewood Cliffs, NJ, EE. UU.: Prentice Hall, 1988.
-
-[2] P. J. Deitel y H. M. Deitel, C: How to Program, 8.ª ed. Hoboken, NJ, EE. UU.: Pearson, 2016.
-
-[3] R. Sedgewick y K. Wayne, Algorithms, 4.ª ed. Boston, MA, EE. UU.: Addison-Wesley Professional, 2011.
-
-[4] S. G. Kochan, Programming in C, 4.ª ed. Upper Saddle River, NJ, EE. UU.: Addison-Wesley, 2015.
-
-
-
-
-  </details>
-
-
-
-
-
+<a id="uso-ia"></a>
 <details>
-  <summary>📂 <b>Uso de la IA:</b></summary>
-  <br>
-  <blockquote>
+<summary><h2 style="display:inline">🤖 Uso de la IA</h2></summary>
 
+> [!NOTE]
+> Declaro que para la elaboración de este portafolio digital se utilizaron herramientas de inteligencia artificial —como ChatGPT, Gemini y NotebookLM— como apoyo en la redacción, corrección de estilo y organización del contenido. El análisis, la resolución de ejercicios, la elaboración de diagramas de flujo y el desarrollo de código fueron realizados por mi persona.
 
-Declaro que para la elaboración de este portafolio digital se utilizaron herramientas de inteligencia artificial como ChatGPT, Gemini y NotebookLM como apoyo en la redacción, corrección de estilo y organización del contenido. El análisis, resolución de ejercicios, elaboración de diagramas de flujo y desarrollo de código fueron realizados por mi persona.
+<div align="right"><a href="#top">⬆ Volver arriba</a></div>
 
-
-
-
- </details>
-  
-
+</details>
