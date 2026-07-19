@@ -532,27 +532,31 @@ A modo de análisis crítico, pienso que la modularidad y los arreglos son conte
   <blockquote>
 
 	  
-#### Unidad1 
-	  
- Cairó Battistutti, O. (2005). Metodología de la programación: Algoritmos, diagramas de flujo y programas (3ra ed.). Alfaomega.
- 
-Joyanes Aguilar, L. (2008). Fundamentos de programación: Algoritmos, estructura de datos y objetos (4ta ed.). McGraw-Hill
+#### Unidad1
+[1] O. Cairó Battistutti, Metodología de la programación: Algoritmos, diagramas de flujo y programas, 3.ª ed. México, D.F.: Alfaomega, 2005.
 
-Brookshear, J. G. (2012). Introducción a la computación (11va ed.). Pearson Educación.
+[2] L. Joyanes Aguilar, Fundamentos de programación: Algoritmos, estructura de datos y objetos, 4.ª ed. Madrid: McGraw-Hill, 2008.
 
-Resnick, M. (2019). Cultivar la creatividad: El aprendizaje a través de proyectos, la pasión, los compañeros y el juego. Programamos.
+[3] J. G. Brookshear, Introducción a la computación, 11.ª ed. Madrid: Pearson Educación, 2012.
+
+[4] M. Resnick, Cultivar la creatividad: El aprendizaje a través de proyectos, la pasión, los compañeros y el juego. Programamos, 2019.
 
 #### Unidad2
+[5] L. Joyanes Aguilar, Fundamentos de programación: Algoritmos, estructura de datos y objetos, 4.ª ed. Madrid: McGraw-Hill, 2008.
 
+[6] O. Cairó Battistutti, Metodología de la programación: Algoritmos, diagramas de flujo y programas, 3.ª ed. México, D.F.: Alfaomega, 2005.
 
-Joyanes Aguilar, L. (2008). Fundamentos de programación: Algoritmos, estructura de datos y objetos (4ta ed.). McGraw-Hill.
+[7] S. McConnell, Code Complete: A Practical Handbook of Software Construction, 2.ª ed. Redmond, WA: Microsoft Press, 2004.
 
-Cairó Battistutti, O. (2005). Metodología de la programación: Algoritmos, diagramas de flujo y programas (3ra ed.). Alfaomega.
+#### Unidad3
 
-McConnell, S. (2004). Code Complete: A Practical Handbook of Software Construction (2da ed.). Microsoft Press.
+[1] B. W. Kernighan y D. M. Ritchie, The C Programming Language, 2.ª ed. Englewood Cliffs, NJ, EE. UU.: Prentice Hall, 1988.
 
+[2] P. J. Deitel y H. M. Deitel, C: How to Program, 8.ª ed. Hoboken, NJ, EE. UU.: Pearson, 2016.
 
+[3] R. Sedgewick y K. Wayne, Algorithms, 4.ª ed. Boston, MA, EE. UU.: Addison-Wesley Professional, 2011.
 
+[4] S. G. Kochan, Programming in C, 4.ª ed. Upper Saddle River, NJ, EE. UU.: Addison-Wesley, 2015.
 
 
 
