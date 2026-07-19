@@ -442,7 +442,9 @@ Añaden profundidad a la matriz: si un arreglo 2D es una "página" de datos, uno
 > [!WARNING]
 
 
-> **Principales dificultades en la aplicación de los contenidos**
+> ### Principales dificultades en la aplicación de los contenidos:
+
+
 > Durante el desarrollo de este trabajo sobre modularidad y arreglos, el mayor obstáculo fue asimilar la distinción real entre pasar un parámetro por valor y pasarlo por referencia. En un primer momento no lograba explicarme por qué, si en apariencia ambos mecanismos "entregaban" el mismo dato a la función, solo uno de ellos terminaba modificando la variable original. Fue necesario ejecutar distintos casos y seguir su comportamiento línea por línea para notar que todo dependía de qué se estaba enviando en realidad: una copia del contenido o la dirección donde ese contenido vive en memoria. A partir de ese momento entendí con más sentido por qué, cuando se busca que una función altere directamente la variable original, resulta indispensable recurrir al operador `&`.
 >
 > Respecto a los arreglos, no fueron los de una sola dimensión los que representaron un reto, dado que su comportamiento resulta casi natural de entender (una simple secuencia de valores localizables mediante un índice). El verdadero desafío apareció con las matrices y, más adelante, con las estructuras de tres dimensiones. Al operar con arreglos bidimensionales tuve que ensayar repetidamente con bucles anidados, ya que en un principio no tenía claro el orden correcto para recorrer filas y columnas, lo que me llevaba a dejar espacios sin asignar valor o a consultar posiciones equivocadas. Ese nivel de dificultad se incrementó al incorporar una tercera dimensión, pues ahí ya no bastaba con pensar en una tabla: había que representarse mentalmente varios planos o capas superpuestas, una imagen bastante más difícil de construir que la de un vector simple o una matriz plana.
@@ -450,7 +452,10 @@ Añaden profundidad a la matriz: si un arreglo 2D es una "página" de datos, uno
 > [!TIP]
 
 
-> **Reflexión crítica**
+> ### Reflexión crítica:
+
+
+
 > La modularidad y los arreglos son contenidos que se entrelazan de forma constante en la práctica real de programar, dado que resulta habitual que las funciones reciban arreglos como parte de sus parámetros. En ese contexto, dominar la diferencia entre el paso por valor y por referencia deja de ser un simple detalle teórico, porque transferir un arreglo completo por valor implicaría un gasto de memoria innecesario y poco eficiente. La posibilidad de poner en práctica estos ejercicios durante las clases demostró que conocer la teoría no basta por sí sola: hace falta programar, equivocarse y corregir el rumbo para llegar a comprender de verdad cómo se comportan los parámetros y de qué manera se recorren los distintos tipos de arreglos. En síntesis, fue la práctica sostenida la que marcó la diferencia entre memorizar conceptos de forma superficial y realmente apropiarse de ellos.
 
 <div align="right"><a href="#top">⬆ Volver arriba</a></div>
