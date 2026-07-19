@@ -448,6 +448,15 @@ O(1), independientemente del tamaño del arreglo o de la posición solicitada.
 * **Cache Friendly (Localidad de referencia)**: Debido a que los elementos están ubicados uno al lado del otro en la memoria, los procesadores pueden aprovechar el caché de la CPU de manera muy eficiente. Al cargar un elemento, es muy probable que los siguientes ya estén en el caché, lo que acelera drásticamente las operaciones de lectura.
 * **Simplicidad en la manipulación**: Proporcionan una sintaxis intuitiva y directa para tareas comunes, como el recorrido mediante bucles (for) y la ordenación de datos, lo que los convierte en la herramienta base para implementar algoritmos fundamentales.
 
+### Tipos de arreglos:
+
+* **Arreglos Unidimensionales (Vectores)**:
+Se comportan como una secuencia lineal de elementos. Es la estructura más básica para representar conjuntos de datos donde el orden importa pero no existe una relación jerárquica compleja.
+
+*Lógica: Imagina una lista de la compra o una serie de mediciones de temperatura tomadas a lo largo de una hora. Solo necesitas una coordenada (el índice) para identificar un valor.
+
+*Técnica: En memoria, el compilador reserva un bloque contiguo de tamaño N * sizeof(tipo_de_dato). Para acceder al elemento en la posición i, el procesador simplemente salta i posiciones desde la dirección base.
+
 
  
 
