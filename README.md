@@ -356,12 +356,12 @@ En cambio, si haces tus diagramas de flujo bien y tiras tus pruebas de escritori
 
 
 <details>
-  <summary>📂 <b>Unidad 3:</b></summary>
+  <summary>📂 <b>Unidad 3:MODULARIDAD Y ARREGLOS </b></summary>
   <br>
   <blockquote>
 
 
-## unidad 3
+## unidad 3 
 
 
  #### Proximamente......
