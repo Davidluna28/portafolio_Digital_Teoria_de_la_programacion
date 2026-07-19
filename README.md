@@ -426,7 +426,27 @@ En lugar de pasar el valor del dato, se pasa la dirección de memoria (o una ref
 | Velocidad             | Más lento con datos grandes.       | Más rápido.                             |
 | Seguridad             | Mayor protección de datos.         | Menor protección (efectos secundarios). |
 
+### Arreglos:
+En el ámbito de la ingeniería de software, un arreglo (o array) es una estructura de datos estática que organiza una colección finita de elementos de tipo homogéneo en posiciones de memoria contiguas. Esta combinación de contigüidad y homogeneidad es lo que le permite ofrecer acceso directo a cualquier elemento sin necesidad de recorrer la estructura.
+Desde una perspectiva técnica, se define por las siguientes características:
 
+* **Tipado homogéneo**: todos los elementos comparten el mismo tipo de dato y, por lo tanto, ocupan un número fijo y conocido de bytes. Esta uniformidad es la que permite al compilador reservar un bloque de memoria regular y predecible, y es la condición necesaria para que el direccionamiento aritmético (ver punto siguiente) sea posible.
+* **Adyacencia en memoria**: al ubicarse de forma secuencial dentro del bloque asignado, el sistema puede calcular la dirección física de cualquier elemento mediante una
+* **fórmula aritmética simple**:
+$$\text{Dirección del elemento} = \text{Dirección base} + (\text{índice} \times \text{tamaño del tipo de dato})$$
+Por ejemplo, en un arreglo de enteros (int, 4 bytes) cuya dirección base es 1000, el elemento en el índice 3 se ubica en 1000 + (3 × 4) = 1012, sin necesidad de inspeccionar los elementos anteriores.
+* **Acceso aleatorio en tiempo constante**: gracias a la fórmula anterior, cualquier posición es alcanzable en tiempo O(1)O(1)
+O(1), independientemente del tamaño del arreglo o de la posición solicitada.
+* **Tamaño fijo (estático)**: en su forma básica en lenguaje C, el tamaño del arreglo debe definirse en tiempo de compilación, por lo que la memoria reservada permanece inmutable durante la ejecución. Esta restricción es precisamente lo que hace posible el rendimiento superior descrito arriba: al no poder crecer ni reubicarse, el compilador puede garantizar contigüidad y direccionamiento constante. La contrapartida es una menor flexibilidad frente a estructuras dinámicas como las listas enlazadas.
+
+### Ventajas:
+
+* **Acceso directo (Tiempo constante $O(1)$)**: Gracias a su disposición contigua en memoria, puedes acceder a cualquier elemento de forma inmediata si conoces su índice. No necesitas recorrer los elementos anteriores, a diferencia de lo que ocurre en una lista enlazada.
+
+* **Eficiencia en el uso de memoria**: Al no requerir punteros adicionales por cada elemento (como ocurre en estructuras dinámicas como las listas enlazadas), los arreglos tienen una sobrecarga de memoria mínima; solo ocupan el espacio estricto de los datos almacenados.
+* **Gestión predecible**: Al ser estructuras de tamaño fijo definido en tiempo de compilación, el compilador puede calcular exactamente cuánta memoria necesita, lo que mejora el rendimiento y facilita la optimización del código.
+* **Cache Friendly (Localidad de referencia)**: Debido a que los elementos están ubicados uno al lado del otro en la memoria, los procesadores pueden aprovechar el caché de la CPU de manera muy eficiente. Al cargar un elemento, es muy probable que los siguientes ya estén en el caché, lo que acelera drásticamente las operaciones de lectura.
+* **Simplicidad en la manipulación**: Proporcionan una sintaxis intuitiva y directa para tareas comunes, como el recorrido mediante bucles (for) y la ordenación de datos, lo que los convierte en la herramienta base para implementar algoritmos fundamentales.
 
 
  
