@@ -371,7 +371,7 @@ Esta estructura permite la **encapsulación de la lógica**, facilita el desarro
 
 ### Tipos de paso de parámetros
 
-**Paso por valor**
+#### Paso por valor:
 Se crea una copia del valor del argumento y se asigna a la variable local de la función.
 
 - **Comportamiento**: los cambios dentro de la función no afectan a la variable original.
@@ -381,7 +381,7 @@ Se crea una copia del valor del argumento y se asigna a la variable local de la 
 
 <img width="700" alt="Paso por valor" src="https://github.com/user-attachments/assets/1989aa8c-b9d3-4d53-9f34-00589da03351" />
 
-**Paso por referencia**
+#### Paso por referencia:
 En lugar del valor, se pasa la dirección de memoria donde reside el dato.
 
 - **Comportamiento**: la función opera directamente sobre la ubicación de memoria del argumento original, por lo que los cambios sí persisten.
@@ -424,22 +424,21 @@ $$\text{Dirección del elemento} = \text{Dirección base} + (\text{índice} \tim
 
 ### Tipos de arreglos
 
-**Arreglos unidimensionales (vectores)**
+#### Arreglos unidimensionales (vectores):
 Se comportan como una secuencia lineal de elementos — como una lista de compras o una serie de temperaturas registradas en una hora. Solo se necesita una coordenada (el índice) para identificar un valor. El compilador reserva un bloque contiguo de tamaño `N * sizeof(tipo)`, y acceder al elemento `i` implica saltar `i` posiciones desde la dirección base.
 
 <img width="600" alt="Arreglo unidimensional" src="https://github.com/user-attachments/assets/0bb47d9d-19de-4eb8-afe5-7f8116c8f729" />
 
-**Arreglos bidimensionales (matrices)**
+#### Arreglos bidimensionales (matrices):
 Se estructuran como una tabla de dos dimensiones. Aunque en la memoria física los datos se almacenan de forma lineal, el lenguaje los mapea lógicamente en filas y columnas — ideal para hojas de cálculo, imágenes en escala de grises o un tablero de ajedrez. Se organizan en formato *row-major order* (primero una fila completa, luego la siguiente): para acceder a `matriz[i][j]`, el compilador calcula `Dirección_base + (i * número_de_columnas + j) * tamaño_dato`.
 
 <img width="700" alt="Arreglo bidimensional" src="https://github.com/user-attachments/assets/f9d52de5-bf6d-4f6f-95eb-b338b089c059" />
 
-**Arreglos multidimensionales (3D o superior)**
+#### Arreglos multidimensionales (3D o superior):
 Añaden profundidad a la matriz: si un arreglo 2D es una "página" de datos, uno 3D es un "libro" completo de páginas. Se utilizan para representar datos más complejos, como imágenes a color RGB (ancho, alto y canal de color) o simulaciones físicas tridimensionales. La complejidad de direccionamiento aumenta, y el tamaño total del arreglo crece de forma multiplicativa según sus dimensiones ($N_1 \times N_2 \times N_3 \dots$).
 
 <img width="600" alt="Arreglo tridimensional" src="https://github.com/user-attachments/assets/2bcc7cf2-cbf9-4c8f-a5b9-533a16f4cc06" />
 
-> [!WARNING]
 
 
 > ### Principales dificultades en la aplicación de los contenidos:
@@ -449,7 +448,6 @@ Añaden profundidad a la matriz: si un arreglo 2D es una "página" de datos, uno
 >
 > Respecto a los arreglos, no fueron los de una sola dimensión los que representaron un reto, dado que su comportamiento resulta casi natural de entender (una simple secuencia de valores localizables mediante un índice). El verdadero desafío apareció con las matrices y, más adelante, con las estructuras de tres dimensiones. Al operar con arreglos bidimensionales tuve que ensayar repetidamente con bucles anidados, ya que en un principio no tenía claro el orden correcto para recorrer filas y columnas, lo que me llevaba a dejar espacios sin asignar valor o a consultar posiciones equivocadas. Ese nivel de dificultad se incrementó al incorporar una tercera dimensión, pues ahí ya no bastaba con pensar en una tabla: había que representarse mentalmente varios planos o capas superpuestas, una imagen bastante más difícil de construir que la de un vector simple o una matriz plana.
 
-> [!TIP]
 
 
 > ### Reflexión crítica:
@@ -468,7 +466,6 @@ Añaden profundidad a la matriz: si un arreglo 2D es una "página" de datos, uno
 <details>
 <summary><h2 style="display:inline">🧭 Conclusiones generales</h2></summary>
 
-> [!IMPORTANT]
 
 
 > Uno de los primeros aprendizajes que este proceso me dejó fue la importancia de analizar el problema antes de sentarme a programar. Apoyarme en pseudocódigo y en diagramas de flujo me permitió entender con claridad qué se esperaba resolver antes de escribir una sola línea de código, y la prueba de escritorio se convirtió en una especie de control de calidad previo: gracias a ella pude confirmar que mi razonamiento era correcto y detectar fallos antes de llegar a la versión final del programa.
